@@ -1,0 +1,3960 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f04ef327d0948a73d352f9790c4851a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f04ef327d0948a73d352f9790c4851a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f04ef327d0948a73d352f9790c4851a = L.map(
+                "map_8f04ef327d0948a73d352f9790c4851a",
+                {
+                    center: [60.1868, 24.933],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_907dc3b3850a909c266138b3a2fe86bb = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_907dc3b3850a909c266138b3a2fe86bb.addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var marker_d7b4b3f7e16d25cc4f703f8a4ce4cef7 = L.marker(
+                [60.1872, 24.9442],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_8789bc3facbdb8148c481e9c875d550e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d7b4b3f7e16d25cc4f703f8a4ce4cef7.setIcon(icon_8789bc3facbdb8148c481e9c875d550e);
+        
+    
+        var popup_e6ef4685e43866d7f776c826e984b0ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ef8298830e5e53ae2387191a7fa90a4 = $(`<div id="html_1ef8298830e5e53ae2387191a7fa90a4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20855429>Josafatinkatu 15</a> 1445 €/kk 73.0 m^2</div>`)[0];
+                popup_e6ef4685e43866d7f776c826e984b0ac.setContent(html_1ef8298830e5e53ae2387191a7fa90a4);
+            
+        
+
+        marker_d7b4b3f7e16d25cc4f703f8a4ce4cef7.bindPopup(popup_e6ef4685e43866d7f776c826e984b0ac)
+        ;
+
+        
+    
+    
+            var marker_93441bbc36d6d976c5f7ffae96c8fc59 = L.marker(
+                [60.1589, 24.9186],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_58bd5f3adbadc29ebcfa3a97fe38f869 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_93441bbc36d6d976c5f7ffae96c8fc59.setIcon(icon_58bd5f3adbadc29ebcfa3a97fe38f869);
+        
+    
+        var popup_d774d9bae37031aec5403248d1d8b97e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9aa3a3bfabae0f1745ef0207a335a377 = $(`<div id="html_9aa3a3bfabae0f1745ef0207a335a377" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20855346>Juutinraumankatu 10</a> 1227 €/kk 59.5 m^2</div>`)[0];
+                popup_d774d9bae37031aec5403248d1d8b97e.setContent(html_9aa3a3bfabae0f1745ef0207a335a377);
+            
+        
+
+        marker_93441bbc36d6d976c5f7ffae96c8fc59.bindPopup(popup_d774d9bae37031aec5403248d1d8b97e)
+        ;
+
+        
+    
+    
+            var marker_19b0d937bb8ad51c82b729cb9e68f9d4 = L.marker(
+                [60.1846, 24.9621],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6473aaf7abcfcd678e19fc65d8edf1d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_19b0d937bb8ad51c82b729cb9e68f9d4.setIcon(icon_6473aaf7abcfcd678e19fc65d8edf1d3);
+        
+    
+        var popup_dc4cff1c758632edaf16e090557f990b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9b68b4f4e5e2fdf30bf50d9162c9be3 = $(`<div id="html_c9b68b4f4e5e2fdf30bf50d9162c9be3" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20855304>Lintulahdenaukio 6</a> 1310 €/kk 59.5 m^2</div>`)[0];
+                popup_dc4cff1c758632edaf16e090557f990b.setContent(html_c9b68b4f4e5e2fdf30bf50d9162c9be3);
+            
+        
+
+        marker_19b0d937bb8ad51c82b729cb9e68f9d4.bindPopup(popup_dc4cff1c758632edaf16e090557f990b)
+        ;
+
+        
+    
+    
+            var marker_b84a9c6f88ac26dd6de064f504352e78 = L.marker(
+                [60.1568, 24.933],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_949b60e5a22e5b6ced4ae5e6d4d97ab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_b84a9c6f88ac26dd6de064f504352e78.setIcon(icon_949b60e5a22e5b6ced4ae5e6d4d97ab5);
+        
+    
+        var popup_158e587eea54fc72735eb49116ecc6f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae18d124de1bdb000730889f84646fa = $(`<div id="html_8ae18d124de1bdb000730889f84646fa" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20853836>Hernesaarenkatu 7</a> 1475 €/kk 66.5 m^2</div>`)[0];
+                popup_158e587eea54fc72735eb49116ecc6f5.setContent(html_8ae18d124de1bdb000730889f84646fa);
+            
+        
+
+        marker_b84a9c6f88ac26dd6de064f504352e78.bindPopup(popup_158e587eea54fc72735eb49116ecc6f5)
+        ;
+
+        
+    
+    
+            var marker_58c5de5e3623be1e325df6f305470762 = L.marker(
+                [60.1851, 24.9818],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ff8020ef98b59d52a1d65d353f81c6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_58c5de5e3623be1e325df6f305470762.setIcon(icon_ff8020ef98b59d52a1d65d353f81c6c0);
+        
+    
+        var popup_9bb0a88c4944b1c8847ff1227c337306 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e859e2c590d2f0bd878d6cf31e69105 = $(`<div id="html_6e859e2c590d2f0bd878d6cf31e69105" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20853657>Leonkatu 17 C 41</a> 1400 €/kk 59.5 m^2</div>`)[0];
+                popup_9bb0a88c4944b1c8847ff1227c337306.setContent(html_6e859e2c590d2f0bd878d6cf31e69105);
+            
+        
+
+        marker_58c5de5e3623be1e325df6f305470762.bindPopup(popup_9bb0a88c4944b1c8847ff1227c337306)
+        ;
+
+        
+    
+    
+            var marker_40a853c3358b7c940524b6ec3d599385 = L.marker(
+                [60.179, 24.9598],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_76b12e1aeae44361df26a755a12eb351 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_40a853c3358b7c940524b6ec3d599385.setIcon(icon_76b12e1aeae44361df26a755a12eb351);
+        
+    
+        var popup_4d5805b8646f4d2ffbabec8fc299941e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e42ead2a4ebb9e3be409a1c0ae0aa32b = $(`<div id="html_e42ead2a4ebb9e3be409a1c0ae0aa32b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20853252>Haapaniemenkatu 11</a> 1350 €/kk 60.0 m^2</div>`)[0];
+                popup_4d5805b8646f4d2ffbabec8fc299941e.setContent(html_e42ead2a4ebb9e3be409a1c0ae0aa32b);
+            
+        
+
+        marker_40a853c3358b7c940524b6ec3d599385.bindPopup(popup_4d5805b8646f4d2ffbabec8fc299941e)
+        ;
+
+        
+    
+    
+            var marker_5a065a28da56d46078a23bae94874ec8 = L.marker(
+                [60.1807, 24.9618],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_dddefd4520a98aeadc4ac2bf6c2e795b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_5a065a28da56d46078a23bae94874ec8.setIcon(icon_dddefd4520a98aeadc4ac2bf6c2e795b);
+        
+    
+        var popup_bba3aa87fe3e47bdb07972712d72b464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f29edd19b1e366be16b37428453a17 = $(`<div id="html_53f29edd19b1e366be16b37428453a17" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20853122>Hakaniemenranta 30</a> 1239 €/kk 55.0 m^2</div>`)[0];
+                popup_bba3aa87fe3e47bdb07972712d72b464.setContent(html_53f29edd19b1e366be16b37428453a17);
+            
+        
+
+        marker_5a065a28da56d46078a23bae94874ec8.bindPopup(popup_bba3aa87fe3e47bdb07972712d72b464)
+        ;
+
+        
+    
+    
+            var marker_f53804a3301ac4e3a7a15d5a5823861f = L.marker(
+                [60.1711, 24.9302],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6b0d65ca926e2b20c8503e65ebccb528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f53804a3301ac4e3a7a15d5a5823861f.setIcon(icon_6b0d65ca926e2b20c8503e65ebccb528);
+        
+    
+        var popup_c637b3cf63283b00d409302ea2671ece = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a22aabeb9a526ff1cc751ea74b5ffeab = $(`<div id="html_a22aabeb9a526ff1cc751ea74b5ffeab" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20852423>Arkadiankatu 8 E</a> 1450 €/kk 59.5 m^2</div>`)[0];
+                popup_c637b3cf63283b00d409302ea2671ece.setContent(html_a22aabeb9a526ff1cc751ea74b5ffeab);
+            
+        
+
+        marker_f53804a3301ac4e3a7a15d5a5823861f.bindPopup(popup_c637b3cf63283b00d409302ea2671ece)
+        ;
+
+        
+    
+    
+            var marker_c8f993c9d566c737b18b0202d162fe96 = L.marker(
+                [60.1614, 24.9201],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6f34b543bd87d57c58ca9ebf2a08639d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_c8f993c9d566c737b18b0202d162fe96.setIcon(icon_6f34b543bd87d57c58ca9ebf2a08639d);
+        
+    
+        var popup_bb6863b2ce53f7e768a8da48857d53c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3055a32fd67e620a9f18c1512bffa737 = $(`<div id="html_3055a32fd67e620a9f18c1512bffa737" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20852268>Laivapojankatu 3</a> 1500 €/kk 84.0 m^2</div>`)[0];
+                popup_bb6863b2ce53f7e768a8da48857d53c1.setContent(html_3055a32fd67e620a9f18c1512bffa737);
+            
+        
+
+        marker_c8f993c9d566c737b18b0202d162fe96.bindPopup(popup_bb6863b2ce53f7e768a8da48857d53c1)
+        ;
+
+        
+    
+    
+            var marker_61aece1e7cf4057f3116594a662e9408 = L.marker(
+                [60.1671, 24.9242],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_1365fd41ac74d7feb497a25875eb13a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_61aece1e7cf4057f3116594a662e9408.setIcon(icon_1365fd41ac74d7feb497a25875eb13a8);
+        
+    
+        var popup_4eec4e5dd46894e76037cae35d1d2583 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89972e46904867969ccf204156e9fd70 = $(`<div id="html_89972e46904867969ccf204156e9fd70" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20852029>Lapinlahdenkatu 12</a> 1240 €/kk 65.0 m^2</div>`)[0];
+                popup_4eec4e5dd46894e76037cae35d1d2583.setContent(html_89972e46904867969ccf204156e9fd70);
+            
+        
+
+        marker_61aece1e7cf4057f3116594a662e9408.bindPopup(popup_4eec4e5dd46894e76037cae35d1d2583)
+        ;
+
+        
+    
+    
+            var marker_4345bec6800b9e4b5646f80a913b2955 = L.marker(
+                [60.1853, 24.9177],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_334a10f7cc3b9ab8547492a11c103f5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_4345bec6800b9e4b5646f80a913b2955.setIcon(icon_334a10f7cc3b9ab8547492a11c103f5f);
+        
+    
+        var popup_0f41a99cae6021c457bb136a49b2cb22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c7c1d2ee771498e08b0fd17d69217e6 = $(`<div id="html_4c7c1d2ee771498e08b0fd17d69217e6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20308794>Linnankoskenkatu 10 A</a> 1190 €/kk 55.0 m^2</div>`)[0];
+                popup_0f41a99cae6021c457bb136a49b2cb22.setContent(html_4c7c1d2ee771498e08b0fd17d69217e6);
+            
+        
+
+        marker_4345bec6800b9e4b5646f80a913b2955.bindPopup(popup_0f41a99cae6021c457bb136a49b2cb22)
+        ;
+
+        
+    
+    
+            var marker_d6c0ca15a790cc3cab36fc69a4dca673 = L.marker(
+                [60.1856, 24.9198],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_09631f6ee5f2c84883b4d0dbe26249e9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d6c0ca15a790cc3cab36fc69a4dca673.setIcon(icon_09631f6ee5f2c84883b4d0dbe26249e9);
+        
+    
+        var popup_4f41b9ab1f7bcb8fb9d0e3ac5fc092f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa0bffe1b49b77f4db1c31c4f51077dd = $(`<div id="html_fa0bffe1b49b77f4db1c31c4f51077dd" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20851837>Minna Canthin katu 1</a> 1350 €/kk 65.0 m^2</div>`)[0];
+                popup_4f41b9ab1f7bcb8fb9d0e3ac5fc092f9.setContent(html_fa0bffe1b49b77f4db1c31c4f51077dd);
+            
+        
+
+        marker_d6c0ca15a790cc3cab36fc69a4dca673.bindPopup(popup_4f41b9ab1f7bcb8fb9d0e3ac5fc092f9)
+        ;
+
+        
+    
+    
+            var marker_b53f45e9300c9172762726a9665e4920 = L.marker(
+                [60.177, 24.9276],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f6ca8858a67d995acf1fde1a59a73a8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_b53f45e9300c9172762726a9665e4920.setIcon(icon_f6ca8858a67d995acf1fde1a59a73a8c);
+        
+    
+        var popup_bd5e0f5a12a11ef5dedc892fe589ae6f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42f8db15ad437d1c59d2b422632ecd4d = $(`<div id="html_42f8db15ad437d1c59d2b422632ecd4d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20851782>Vänrikki Stoolin katu 11 C</a> 1295 €/kk 75.5 m^2</div>`)[0];
+                popup_bd5e0f5a12a11ef5dedc892fe589ae6f.setContent(html_42f8db15ad437d1c59d2b422632ecd4d);
+            
+        
+
+        marker_b53f45e9300c9172762726a9665e4920.bindPopup(popup_bd5e0f5a12a11ef5dedc892fe589ae6f)
+        ;
+
+        
+    
+    
+            var marker_cdd4259879661996b5e170593a6a2898 = L.marker(
+                [60.161, 24.9162],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_4a79f160a12e85f028eec49b514f68a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cdd4259879661996b5e170593a6a2898.setIcon(icon_4a79f160a12e85f028eec49b514f68a9);
+        
+    
+        var popup_e3a96d6d8b2f429894920638d081384c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_01b12466a29eb1e854cf4a77f338d694 = $(`<div id="html_01b12466a29eb1e854cf4a77f338d694" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20850889>Selkämerenkatu 12</a> 1276 €/kk 63.0 m^2</div>`)[0];
+                popup_e3a96d6d8b2f429894920638d081384c.setContent(html_01b12466a29eb1e854cf4a77f338d694);
+            
+        
+
+        marker_cdd4259879661996b5e170593a6a2898.bindPopup(popup_e3a96d6d8b2f429894920638d081384c)
+        ;
+
+        
+    
+    
+            var marker_8879e364f61d0466a35fc7d807f62b27 = L.marker(
+                [60.1767, 24.9236],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_36cc8694d92b2ff506a985399b413ed2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_8879e364f61d0466a35fc7d807f62b27.setIcon(icon_36cc8694d92b2ff506a985399b413ed2);
+        
+    
+        var popup_47009364dc981251a6e7c13c7f00cd9b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fef19470705db1d69c50f608b6b51e35 = $(`<div id="html_fef19470705db1d69c50f608b6b51e35" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20850822>Eteläinen Hesperiankatu 20 A</a> 1495 €/kk 80.0 m^2</div>`)[0];
+                popup_47009364dc981251a6e7c13c7f00cd9b.setContent(html_fef19470705db1d69c50f608b6b51e35);
+            
+        
+
+        marker_8879e364f61d0466a35fc7d807f62b27.bindPopup(popup_47009364dc981251a6e7c13c7f00cd9b)
+        ;
+
+        
+    
+    
+            var marker_69076645dc1ec1b7447c912a8fabee0b = L.marker(
+                [60.1845, 24.9177],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f343d957318cedf28f4fb2ad947e14bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_69076645dc1ec1b7447c912a8fabee0b.setIcon(icon_f343d957318cedf28f4fb2ad947e14bb);
+        
+    
+        var popup_684e6d7d38efbe69df9fb8fee87e9989 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a65a3d462a551880af49a38f23919d16 = $(`<div id="html_a65a3d462a551880af49a38f23919d16" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20850655>Topeliuksenkatu 21 A</a> 1295 €/kk 62.0 m^2</div>`)[0];
+                popup_684e6d7d38efbe69df9fb8fee87e9989.setContent(html_a65a3d462a551880af49a38f23919d16);
+            
+        
+
+        marker_69076645dc1ec1b7447c912a8fabee0b.bindPopup(popup_684e6d7d38efbe69df9fb8fee87e9989)
+        ;
+
+        
+    
+    
+            var marker_5060e67a37e7b40bec5af3c00c178922 = L.marker(
+                [60.1757, 24.9263],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_45e12c88ec8e8cc710a8023d64120493 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5060e67a37e7b40bec5af3c00c178922.setIcon(icon_45e12c88ec8e8cc710a8023d64120493);
+        
+    
+        var popup_2dbd8af84ef970533d0c1c41f22555a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_955662ac8df10028cf2419c6fed80483 = $(`<div id="html_955662ac8df10028cf2419c6fed80483" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20850606>Apollonkatu 10 B 46</a> 1400 €/kk 55.0 m^2</div>`)[0];
+                popup_2dbd8af84ef970533d0c1c41f22555a2.setContent(html_955662ac8df10028cf2419c6fed80483);
+            
+        
+
+        marker_5060e67a37e7b40bec5af3c00c178922.bindPopup(popup_2dbd8af84ef970533d0c1c41f22555a2)
+        ;
+
+        
+    
+    
+            var marker_ef6066afab811c1182578693cf8b533b = L.marker(
+                [60.1683, 24.9367],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7b0ad52e9ceeb6c5fbb9bddb9ced4f97 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ef6066afab811c1182578693cf8b533b.setIcon(icon_7b0ad52e9ceeb6c5fbb9bddb9ced4f97);
+        
+    
+        var popup_0961a34b7a380f78ec12dd16f0acfa7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f5a147bafa875cd311593976ff463c8 = $(`<div id="html_2f5a147bafa875cd311593976ff463c8" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20850494>Yrjönkatu 34 B</a> 1450 €/kk 62.5 m^2</div>`)[0];
+                popup_0961a34b7a380f78ec12dd16f0acfa7b.setContent(html_2f5a147bafa875cd311593976ff463c8);
+            
+        
+
+        marker_ef6066afab811c1182578693cf8b533b.bindPopup(popup_0961a34b7a380f78ec12dd16f0acfa7b)
+        ;
+
+        
+    
+    
+            var marker_78b9f414748e485e5ebc272276e26804 = L.marker(
+                [60.1622, 24.9115],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_3a2aab08c06ad1dcb2386eb9f9875d9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_78b9f414748e485e5ebc272276e26804.setIcon(icon_3a2aab08c06ad1dcb2386eb9f9875d9d);
+        
+    
+        var popup_78c8af0000e90d778e520d16623e478d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77fcd7f5e2be815c630429f4201ff683 = $(`<div id="html_77fcd7f5e2be815c630429f4201ff683" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20849169>Kellosaarenkatu 4</a> 1218 €/kk 62.0 m^2</div>`)[0];
+                popup_78c8af0000e90d778e520d16623e478d.setContent(html_77fcd7f5e2be815c630429f4201ff683);
+            
+        
+
+        marker_78b9f414748e485e5ebc272276e26804.bindPopup(popup_78c8af0000e90d778e520d16623e478d)
+        ;
+
+        
+    
+    
+            var marker_39c2137499477cd7c1bee4123bbd56cd = L.marker(
+                [60.1598, 24.9185],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ad68f49a00913f78287af511f0a95835 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39c2137499477cd7c1bee4123bbd56cd.setIcon(icon_ad68f49a00913f78287af511f0a95835);
+        
+    
+        var popup_bbc40d30d151f2beb9de35969fa163d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_953756d64a932241ff0af1b3cfeca39c = $(`<div id="html_953756d64a932241ff0af1b3cfeca39c" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20849050>Välimerenkatu 8</a> 1450 €/kk 59.5 m^2</div>`)[0];
+                popup_bbc40d30d151f2beb9de35969fa163d8.setContent(html_953756d64a932241ff0af1b3cfeca39c);
+            
+        
+
+        marker_39c2137499477cd7c1bee4123bbd56cd.bindPopup(popup_bbc40d30d151f2beb9de35969fa163d8)
+        ;
+
+        
+    
+    
+            var marker_fd0f2dd24d285c6be84efb4ac54b17aa = L.marker(
+                [60.1853, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f9ad6c62a6def208eba9db97e00530cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_fd0f2dd24d285c6be84efb4ac54b17aa.setIcon(icon_f9ad6c62a6def208eba9db97e00530cd);
+        
+    
+        var popup_d79ecea45cac40225152d904f35b9698 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f57fa9c8afe390f7451ecef4e8a25b4 = $(`<div id="html_5f57fa9c8afe390f7451ecef4e8a25b4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17706147>Hämeentie 40 B</a> 1325 €/kk 60.0 m^2</div>`)[0];
+                popup_d79ecea45cac40225152d904f35b9698.setContent(html_5f57fa9c8afe390f7451ecef4e8a25b4);
+            
+        
+
+        marker_fd0f2dd24d285c6be84efb4ac54b17aa.bindPopup(popup_d79ecea45cac40225152d904f35b9698)
+        ;
+
+        
+    
+    
+            var marker_0e06c808b2d58de2e4096c00829d8e6c = L.marker(
+                [60.1645, 24.9293],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_493eaebeb3960cce8f017223db57eecb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_0e06c808b2d58de2e4096c00829d8e6c.setIcon(icon_493eaebeb3960cce8f017223db57eecb);
+        
+    
+        var popup_bc4ae2bb26cef096d7decce04f136d85 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0bd4333e495a76f6a21d0363dee2b8ff = $(`<div id="html_0bd4333e495a76f6a21d0363dee2b8ff" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20848429>Kalevankatu 47 B</a> 1298 €/kk 58.0 m^2</div>`)[0];
+                popup_bc4ae2bb26cef096d7decce04f136d85.setContent(html_0bd4333e495a76f6a21d0363dee2b8ff);
+            
+        
+
+        marker_0e06c808b2d58de2e4096c00829d8e6c.bindPopup(popup_bc4ae2bb26cef096d7decce04f136d85)
+        ;
+
+        
+    
+    
+            var marker_c6f22014595e3d92a00ff3438ca73aa5 = L.marker(
+                [60.1568, 24.9208],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ed5fce1a6ddee553c4ac5026ece05788 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6f22014595e3d92a00ff3438ca73aa5.setIcon(icon_ed5fce1a6ddee553c4ac5026ece05788);
+        
+    
+        var popup_95bd3972c648daa1d7b7e80fbe9a4679 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_907e00a0ab48a8b534e5836253a6d2a4 = $(`<div id="html_907e00a0ab48a8b534e5836253a6d2a4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20848305>Rionkatu 11 A</a> 1325 €/kk 57.5 m^2</div>`)[0];
+                popup_95bd3972c648daa1d7b7e80fbe9a4679.setContent(html_907e00a0ab48a8b534e5836253a6d2a4);
+            
+        
+
+        marker_c6f22014595e3d92a00ff3438ca73aa5.bindPopup(popup_95bd3972c648daa1d7b7e80fbe9a4679)
+        ;
+
+        
+    
+    
+            var marker_3c1960a1cda909c678502e8d5692ac02 = L.marker(
+                [60.1803, 24.9252],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_becb08a28d721ac600fa27bb8899b6ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3c1960a1cda909c678502e8d5692ac02.setIcon(icon_becb08a28d721ac600fa27bb8899b6ea);
+        
+    
+        var popup_13317c26d2ce5c53d35ca5056fe9cdbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fab30bda6e45fe17aebf381bc8118f0b = $(`<div id="html_fab30bda6e45fe17aebf381bc8118f0b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20848300>Töölönkatu 27 A</a> 1150 €/kk 56.0 m^2</div>`)[0];
+                popup_13317c26d2ce5c53d35ca5056fe9cdbf.setContent(html_fab30bda6e45fe17aebf381bc8118f0b);
+            
+        
+
+        marker_3c1960a1cda909c678502e8d5692ac02.bindPopup(popup_13317c26d2ce5c53d35ca5056fe9cdbf)
+        ;
+
+        
+    
+    
+            var marker_5f8f7b8976656320da2a8c226ae3f611 = L.marker(
+                [60.1707, 24.9203],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_bc07bd9e1618972706e836ea17445782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_5f8f7b8976656320da2a8c226ae3f611.setIcon(icon_bc07bd9e1618972706e836ea17445782);
+        
+    
+        var popup_84853c5702efef5084fe6a6b667538b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_687be756094544b70766b7a22ff0b263 = $(`<div id="html_687be756094544b70766b7a22ff0b263" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20848040>Mechelininkatu 4</a> 1290 €/kk 58.5 m^2</div>`)[0];
+                popup_84853c5702efef5084fe6a6b667538b5.setContent(html_687be756094544b70766b7a22ff0b263);
+            
+        
+
+        marker_5f8f7b8976656320da2a8c226ae3f611.bindPopup(popup_84853c5702efef5084fe6a6b667538b5)
+        ;
+
+        
+    
+    
+            var marker_6eb2a87abffcd0039f3a47b8c50f1bb1 = L.marker(
+                [60.158, 24.9432],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ecf2784bd7f4eb0f45675048a1a35fd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6eb2a87abffcd0039f3a47b8c50f1bb1.setIcon(icon_ecf2784bd7f4eb0f45675048a1a35fd9);
+        
+    
+        var popup_215b205f9da9f667fbd0960ce5c84315 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_005fcd7bb8b21181c18edc3e20ee3771 = $(`<div id="html_005fcd7bb8b21181c18edc3e20ee3771" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20847972>Tehtaankatu 26</a> 1190 €/kk 59.0 m^2</div>`)[0];
+                popup_215b205f9da9f667fbd0960ce5c84315.setContent(html_005fcd7bb8b21181c18edc3e20ee3771);
+            
+        
+
+        marker_6eb2a87abffcd0039f3a47b8c50f1bb1.bindPopup(popup_215b205f9da9f667fbd0960ce5c84315)
+        ;
+
+        
+    
+    
+            var marker_a88ad9d83de5d07a82e0141cb79c005e = L.marker(
+                [60.178, 24.9474],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6e021d249c7b8f5d8abd990723ceb951 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_a88ad9d83de5d07a82e0141cb79c005e.setIcon(icon_6e021d249c7b8f5d8abd990723ceb951);
+        
+    
+        var popup_8175da6924170c7a9161e5dd38a3ed09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_298cfe682edc3d53e8021a2747672720 = $(`<div id="html_298cfe682edc3d53e8021a2747672720" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20847900>Paasivuorenkatu 8</a> 1450 €/kk 66.5 m^2</div>`)[0];
+                popup_8175da6924170c7a9161e5dd38a3ed09.setContent(html_298cfe682edc3d53e8021a2747672720);
+            
+        
+
+        marker_a88ad9d83de5d07a82e0141cb79c005e.bindPopup(popup_8175da6924170c7a9161e5dd38a3ed09)
+        ;
+
+        
+    
+    
+            var marker_701e0f8737a187f425a84a82689bf26a = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_039bc1d4acd84a5883a4d9fc65125722 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_701e0f8737a187f425a84a82689bf26a.setIcon(icon_039bc1d4acd84a5883a4d9fc65125722);
+        
+    
+        var popup_de3d8f12b5c4dce03ef5c781d7f63fb0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08385f9605bead8968f6a2044d911885 = $(`<div id="html_08385f9605bead8968f6a2044d911885" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20847549>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_de3d8f12b5c4dce03ef5c781d7f63fb0.setContent(html_08385f9605bead8968f6a2044d911885);
+            
+        
+
+        marker_701e0f8737a187f425a84a82689bf26a.bindPopup(popup_de3d8f12b5c4dce03ef5c781d7f63fb0)
+        ;
+
+        
+    
+    
+            var marker_27df601570754d458c2973817345773e = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_b60be294de052b33e200163d0d697e8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_27df601570754d458c2973817345773e.setIcon(icon_b60be294de052b33e200163d0d697e8d);
+        
+    
+        var popup_3ac7bd929bf557a3b77b923cd94c8a62 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e49819380826b76d6d0081344dbe9ab6 = $(`<div id="html_e49819380826b76d6d0081344dbe9ab6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20847546>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_3ac7bd929bf557a3b77b923cd94c8a62.setContent(html_e49819380826b76d6d0081344dbe9ab6);
+            
+        
+
+        marker_27df601570754d458c2973817345773e.bindPopup(popup_3ac7bd929bf557a3b77b923cd94c8a62)
+        ;
+
+        
+    
+    
+            var marker_96b3c260dccd61f46f7b1c7414e8a99b = L.marker(
+                [60.1688, 24.927],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6771158233d49e41cdf30a6d199b4979 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_96b3c260dccd61f46f7b1c7414e8a99b.setIcon(icon_6771158233d49e41cdf30a6d199b4979);
+        
+    
+        var popup_116ba523cbc37d9f8b09bddc9f6e6b58 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a264788bbf73c4bf5d5d3a0a28642bac = $(`<div id="html_a264788bbf73c4bf5d5d3a0a28642bac" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18085381>Eteläinen Rautatiekatu 14b B</a> 1090 €/kk 57.0 m^2</div>`)[0];
+                popup_116ba523cbc37d9f8b09bddc9f6e6b58.setContent(html_a264788bbf73c4bf5d5d3a0a28642bac);
+            
+        
+
+        marker_96b3c260dccd61f46f7b1c7414e8a99b.bindPopup(popup_116ba523cbc37d9f8b09bddc9f6e6b58)
+        ;
+
+        
+    
+    
+            var marker_c7cbba798aa3a8005d65124c302fbb78 = L.marker(
+                [60.1909, 24.9677],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_673d37136d6eb4da55626f6efea4f3ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c7cbba798aa3a8005d65124c302fbb78.setIcon(icon_673d37136d6eb4da55626f6efea4f3ef);
+        
+    
+        var popup_cece247d89c9da54f1c2aec7826d6755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13700911043f82e3f93dc9f8a09b81ef = $(`<div id="html_13700911043f82e3f93dc9f8a09b81ef" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20846489>Tuulensuunkuja 3</a> 1498 €/kk 57.0 m^2</div>`)[0];
+                popup_cece247d89c9da54f1c2aec7826d6755.setContent(html_13700911043f82e3f93dc9f8a09b81ef);
+            
+        
+
+        marker_c7cbba798aa3a8005d65124c302fbb78.bindPopup(popup_cece247d89c9da54f1c2aec7826d6755)
+        ;
+
+        
+    
+    
+            var marker_3a8a99cee5558c4394b87152c92f190c = L.marker(
+                [60.1838, 24.916],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_72e54c8fe7c55438816a0da6477acb0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_3a8a99cee5558c4394b87152c92f190c.setIcon(icon_72e54c8fe7c55438816a0da6477acb0b);
+        
+    
+        var popup_f1808f3bea015fdb75f32dfa5b2c8938 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdfd3647a9d565ccbaa6d8f780040081 = $(`<div id="html_fdfd3647a9d565ccbaa6d8f780040081" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20846447>Mechelininkatu 41</a> 1390 €/kk 72.0 m^2</div>`)[0];
+                popup_f1808f3bea015fdb75f32dfa5b2c8938.setContent(html_fdfd3647a9d565ccbaa6d8f780040081);
+            
+        
+
+        marker_3a8a99cee5558c4394b87152c92f190c.bindPopup(popup_f1808f3bea015fdb75f32dfa5b2c8938)
+        ;
+
+        
+    
+    
+            var marker_b2b52abead80a771950389ff069ce309 = L.marker(
+                [60.1853, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_aca87c3a69157697c1ca740f32482ca0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_b2b52abead80a771950389ff069ce309.setIcon(icon_aca87c3a69157697c1ca740f32482ca0);
+        
+    
+        var popup_66aa003aa60e875b7834357c28f6d1b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42a640f2ebe4924dc7eea142fc4d913c = $(`<div id="html_42a640f2ebe4924dc7eea142fc4d913c" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20845679>Hämeentie 44 A</a> 1089 €/kk 63.5 m^2</div>`)[0];
+                popup_66aa003aa60e875b7834357c28f6d1b8.setContent(html_42a640f2ebe4924dc7eea142fc4d913c);
+            
+        
+
+        marker_b2b52abead80a771950389ff069ce309.bindPopup(popup_66aa003aa60e875b7834357c28f6d1b8)
+        ;
+
+        
+    
+    
+            var marker_1b61c488a072ba34382c1fb2573604ee = L.marker(
+                [60.1602, 24.9167],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_1c2934bab444106a0ce61ad18ded862f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_1b61c488a072ba34382c1fb2573604ee.setIcon(icon_1c2934bab444106a0ce61ad18ded862f);
+        
+    
+        var popup_8cfbbd0939973df69f213061b502ef61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73826386384fbaa612417e17fe0d9351 = $(`<div id="html_73826386384fbaa612417e17fe0d9351" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20845572>Selkämerenkatu 13 D</a> 1415 €/kk 76.0 m^2</div>`)[0];
+                popup_8cfbbd0939973df69f213061b502ef61.setContent(html_73826386384fbaa612417e17fe0d9351);
+            
+        
+
+        marker_1b61c488a072ba34382c1fb2573604ee.bindPopup(popup_8cfbbd0939973df69f213061b502ef61)
+        ;
+
+        
+    
+    
+            var marker_b9f4ff942f85a154eadd30cd0ba591bd = L.marker(
+                [60.1828, 24.951],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_866d53935cebf6bb1422a99b7ef77eec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_b9f4ff942f85a154eadd30cd0ba591bd.setIcon(icon_866d53935cebf6bb1422a99b7ef77eec);
+        
+    
+        var popup_4e57c14214397f3d17cbcd1a7ac58963 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5cd79103758f1280727d2a79ae051507 = $(`<div id="html_5cd79103758f1280727d2a79ae051507" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20845316>Neljäs linja 12 B</a> 1198 €/kk 55.0 m^2</div>`)[0];
+                popup_4e57c14214397f3d17cbcd1a7ac58963.setContent(html_5cd79103758f1280727d2a79ae051507);
+            
+        
+
+        marker_b9f4ff942f85a154eadd30cd0ba591bd.bindPopup(popup_4e57c14214397f3d17cbcd1a7ac58963)
+        ;
+
+        
+    
+    
+            var marker_49a21b6fd8f1950af71cbc5726bc636c = L.marker(
+                [60.1901, 24.9764],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_65dfe4901c4bd8230a23c39b630a31f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_49a21b6fd8f1950af71cbc5726bc636c.setIcon(icon_65dfe4901c4bd8230a23c39b630a31f0);
+        
+    
+        var popup_a22d64ff51566605aa2d6ebc5fd777ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c2947f182d9a1a2098b52484c6ad361 = $(`<div id="html_1c2947f182d9a1a2098b52484c6ad361" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17414964>Tukkutorinkuja 2</a> 1440 €/kk 63.5 m^2</div>`)[0];
+                popup_a22d64ff51566605aa2d6ebc5fd777ee.setContent(html_1c2947f182d9a1a2098b52484c6ad361);
+            
+        
+
+        marker_49a21b6fd8f1950af71cbc5726bc636c.bindPopup(popup_a22d64ff51566605aa2d6ebc5fd777ee)
+        ;
+
+        
+    
+    
+            var marker_8ed8b99db184fc408f6385b14e3768a5 = L.marker(
+                [60.1964, 24.9631],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_436bd76daa235c04ec669427795c82af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_8ed8b99db184fc408f6385b14e3768a5.setIcon(icon_436bd76daa235c04ec669427795c82af);
+        
+    
+        var popup_626c38e750fda61121303327d26f8a02 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8fc1211ea4f6610b79cab76287c463fb = $(`<div id="html_8fc1211ea4f6610b79cab76287c463fb" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17796858>Hämeentie 85-89 C</a> 938 €/kk 60.5 m^2</div>`)[0];
+                popup_626c38e750fda61121303327d26f8a02.setContent(html_8fc1211ea4f6610b79cab76287c463fb);
+            
+        
+
+        marker_8ed8b99db184fc408f6385b14e3768a5.bindPopup(popup_626c38e750fda61121303327d26f8a02)
+        ;
+
+        
+    
+    
+            var marker_603d3d3a13c856074e47d7a136586e3d = L.marker(
+                [60.17, 24.9252],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_1866fe11143cd6a7fc177adce89df829 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_603d3d3a13c856074e47d7a136586e3d.setIcon(icon_1866fe11143cd6a7fc177adce89df829);
+        
+    
+        var popup_cf28c298954d566bb8f51461df76ba93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7fcc5dc034a17d680d48f953f5cf2d01 = $(`<div id="html_7fcc5dc034a17d680d48f953f5cf2d01" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20089898>Perhonkatu 1</a> 1370 €/kk 62.4 m^2</div>`)[0];
+                popup_cf28c298954d566bb8f51461df76ba93.setContent(html_7fcc5dc034a17d680d48f953f5cf2d01);
+            
+        
+
+        marker_603d3d3a13c856074e47d7a136586e3d.bindPopup(popup_cf28c298954d566bb8f51461df76ba93)
+        ;
+
+        
+    
+    
+            var marker_b5353ff60689bda5e98a24ae7a6b9a5d = L.marker(
+                [60.1625, 24.924],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_cbec840ba171193c2c045ae4079c3f96 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_b5353ff60689bda5e98a24ae7a6b9a5d.setIcon(icon_cbec840ba171193c2c045ae4079c3f96);
+        
+    
+        var popup_2ce5d89ffaab7fda8e84c30cde09f27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f2bc0e8ecfddac8bb12222614482f13 = $(`<div id="html_2f2bc0e8ecfddac8bb12222614482f13" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17717423>Kalevankatu 61 A 9</a> 1300 €/kk 59.5 m^2</div>`)[0];
+                popup_2ce5d89ffaab7fda8e84c30cde09f27f.setContent(html_2f2bc0e8ecfddac8bb12222614482f13);
+            
+        
+
+        marker_b5353ff60689bda5e98a24ae7a6b9a5d.bindPopup(popup_2ce5d89ffaab7fda8e84c30cde09f27f)
+        ;
+
+        
+    
+    
+            var marker_dbc6adb28da694915158f8e93f5c2624 = L.marker(
+                [60.188, 24.914],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_cbc6a0688fd29db5f91098057a654f52 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dbc6adb28da694915158f8e93f5c2624.setIcon(icon_cbc6a0688fd29db5f91098057a654f52);
+        
+    
+        var popup_2f2c9bfb4c8d3d8d5978e7466d95b915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd78f7348b812bbead7b8a65d80fe6ff = $(`<div id="html_bd78f7348b812bbead7b8a65d80fe6ff" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20844606>Messeniuksenkatu 10 B</a> 1340 €/kk 64.0 m^2</div>`)[0];
+                popup_2f2c9bfb4c8d3d8d5978e7466d95b915.setContent(html_bd78f7348b812bbead7b8a65d80fe6ff);
+            
+        
+
+        marker_dbc6adb28da694915158f8e93f5c2624.bindPopup(popup_2f2c9bfb4c8d3d8d5978e7466d95b915)
+        ;
+
+        
+    
+    
+            var marker_47541e59d67438ca07c5716e03e2ac98 = L.marker(
+                [60.1598, 24.9185],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_1660c7faaa61f9704a89837f1c066179 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_47541e59d67438ca07c5716e03e2ac98.setIcon(icon_1660c7faaa61f9704a89837f1c066179);
+        
+    
+        var popup_ae223a9e69c6dc793b435bd38207d448 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4b528e2165f5c0d82abbcd481090cc6 = $(`<div id="html_f4b528e2165f5c0d82abbcd481090cc6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20746495>Välimerenkatu 8</a> 1428 €/kk 56.0 m^2</div>`)[0];
+                popup_ae223a9e69c6dc793b435bd38207d448.setContent(html_f4b528e2165f5c0d82abbcd481090cc6);
+            
+        
+
+        marker_47541e59d67438ca07c5716e03e2ac98.bindPopup(popup_ae223a9e69c6dc793b435bd38207d448)
+        ;
+
+        
+    
+    
+            var marker_48c15a9f8edcd46a855635bfb151c307 = L.marker(
+                [60.1593, 24.9167],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_66ebc11e79fe084f98f0df428def0b80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_48c15a9f8edcd46a855635bfb151c307.setIcon(icon_66ebc11e79fe084f98f0df428def0b80);
+        
+    
+        var popup_b7eb20ee3ce463205f82a9bbb231a33d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fe95f77d29c95dd43b578ec3d165c81 = $(`<div id="html_9fe95f77d29c95dd43b578ec3d165c81" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20736121>Välimerenkatu 10</a> 1445 €/kk 58.5 m^2</div>`)[0];
+                popup_b7eb20ee3ce463205f82a9bbb231a33d.setContent(html_9fe95f77d29c95dd43b578ec3d165c81);
+            
+        
+
+        marker_48c15a9f8edcd46a855635bfb151c307.bindPopup(popup_b7eb20ee3ce463205f82a9bbb231a33d)
+        ;
+
+        
+    
+    
+            var marker_afa7cc0c96ee8f3934bbae7b2e1b73f8 = L.marker(
+                [60.1632, 24.9376],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_79ea4bb40fe567260e0277ed9d15a2f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_afa7cc0c96ee8f3934bbae7b2e1b73f8.setIcon(icon_79ea4bb40fe567260e0277ed9d15a2f4);
+        
+    
+        var popup_39123a6bc9c3361a3498708978165897 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05f12a825290ab52d215f82f6f9fb301 = $(`<div id="html_05f12a825290ab52d215f82f6f9fb301" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20720303>Uudenmaankatu 34 C</a> 1390 €/kk 57.5 m^2</div>`)[0];
+                popup_39123a6bc9c3361a3498708978165897.setContent(html_05f12a825290ab52d215f82f6f9fb301);
+            
+        
+
+        marker_afa7cc0c96ee8f3934bbae7b2e1b73f8.bindPopup(popup_39123a6bc9c3361a3498708978165897)
+        ;
+
+        
+    
+    
+            var marker_529a26e4f4d5faa3ab24f760ea81c75c = L.marker(
+                [60.1709, 24.9306],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a30cb644b73226d278f52aaee61ca599 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_529a26e4f4d5faa3ab24f760ea81c75c.setIcon(icon_a30cb644b73226d278f52aaee61ca599);
+        
+    
+        var popup_d1ac049e6f3444d3825a88e4e5768b90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2bddd69caad8b3d7752abd00c27b86e = $(`<div id="html_d2bddd69caad8b3d7752abd00c27b86e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20658550>Arkadiankatu 8 E</a> 1500 €/kk 65.5 m^2</div>`)[0];
+                popup_d1ac049e6f3444d3825a88e4e5768b90.setContent(html_d2bddd69caad8b3d7752abd00c27b86e);
+            
+        
+
+        marker_529a26e4f4d5faa3ab24f760ea81c75c.bindPopup(popup_d1ac049e6f3444d3825a88e4e5768b90)
+        ;
+
+        
+    
+    
+            var marker_60716e4827f3ff5e2ab2cd86ee7b60d8 = L.marker(
+                [60.1524, 24.91],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_edfbb29fc02774cbf6a91a97dee8b081 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_60716e4827f3ff5e2ab2cd86ee7b60d8.setIcon(icon_edfbb29fc02774cbf6a91a97dee8b081);
+        
+    
+        var popup_4b6e3a4fc6ca5969a97a63c08d3edf6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f6ba43c4769ed9bb82fe297d1620426 = $(`<div id="html_8f6ba43c4769ed9bb82fe297d1620426" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20639482>Samoankuja 2 b 22</a> 1498 €/kk 60.5 m^2</div>`)[0];
+                popup_4b6e3a4fc6ca5969a97a63c08d3edf6e.setContent(html_8f6ba43c4769ed9bb82fe297d1620426);
+            
+        
+
+        marker_60716e4827f3ff5e2ab2cd86ee7b60d8.bindPopup(popup_4b6e3a4fc6ca5969a97a63c08d3edf6e)
+        ;
+
+        
+    
+    
+            var marker_e5426c71b4a59a8f2837fd80243a126a = L.marker(
+                [60.1632, 24.9278],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_afabd751eb4408cd9a784b1bc663cdb0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5426c71b4a59a8f2837fd80243a126a.setIcon(icon_afabd751eb4408cd9a784b1bc663cdb0);
+        
+    
+        var popup_45667a4dc1c5babb35094deb41204973 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_26acce9330dd501374499ac26d2b556b = $(`<div id="html_26acce9330dd501374499ac26d2b556b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18555370>Hietalahdenkatu 8 A13</a> 1350 €/kk 58.0 m^2</div>`)[0];
+                popup_45667a4dc1c5babb35094deb41204973.setContent(html_26acce9330dd501374499ac26d2b556b);
+            
+        
+
+        marker_e5426c71b4a59a8f2837fd80243a126a.bindPopup(popup_45667a4dc1c5babb35094deb41204973)
+        ;
+
+        
+    
+    
+            var marker_23869b7974249306fbf7fb7e77cbdc74 = L.marker(
+                [60.1917, 24.968],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f63faa4614a1ab60cbe544e59754e8bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_23869b7974249306fbf7fb7e77cbdc74.setIcon(icon_f63faa4614a1ab60cbe544e59754e8bf);
+        
+    
+        var popup_0f1c3aef544b8c9d20be988e493565be = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0151627f326808c4447cf2a3d2d60823 = $(`<div id="html_0151627f326808c4447cf2a3d2d60823" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20426547>Eläinlääkärinkatu 5</a> 1416 €/kk 65.5 m^2</div>`)[0];
+                popup_0f1c3aef544b8c9d20be988e493565be.setContent(html_0151627f326808c4447cf2a3d2d60823);
+            
+        
+
+        marker_23869b7974249306fbf7fb7e77cbdc74.bindPopup(popup_0f1c3aef544b8c9d20be988e493565be)
+        ;
+
+        
+    
+    
+            var marker_06a94d46d2a3ec0ab336fbbe9b191c17 = L.marker(
+                [60.1609, 24.943],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_4fea6abec64853395bc7357acbad75bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_06a94d46d2a3ec0ab336fbbe9b191c17.setIcon(icon_4fea6abec64853395bc7357acbad75bb);
+        
+    
+        var popup_5ce02e75f07a8f5e2d9d044d08587c16 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5eb8ac076fabeee22c0a6f1960608845 = $(`<div id="html_5eb8ac076fabeee22c0a6f1960608845" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20417386>Tarkk'ampujankatu 15</a> 1500 €/kk 65.8 m^2</div>`)[0];
+                popup_5ce02e75f07a8f5e2d9d044d08587c16.setContent(html_5eb8ac076fabeee22c0a6f1960608845);
+            
+        
+
+        marker_06a94d46d2a3ec0ab336fbbe9b191c17.bindPopup(popup_5ce02e75f07a8f5e2d9d044d08587c16)
+        ;
+
+        
+    
+    
+            var marker_b4ab9dcb77286d720cd067a015953e2b = L.marker(
+                [60.1869, 24.9201],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_53cad577aefd9722a4fa263011a04b78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b4ab9dcb77286d720cd067a015953e2b.setIcon(icon_53cad577aefd9722a4fa263011a04b78);
+        
+    
+        var popup_25524f037e59baa81f927842b12e0aae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0aacade8c141bab47be34e0336b56ad = $(`<div id="html_d0aacade8c141bab47be34e0336b56ad" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20398887>Mannerheimintie 37</a> 1490 €/kk 61.0 m^2</div>`)[0];
+                popup_25524f037e59baa81f927842b12e0aae.setContent(html_d0aacade8c141bab47be34e0336b56ad);
+            
+        
+
+        marker_b4ab9dcb77286d720cd067a015953e2b.bindPopup(popup_25524f037e59baa81f927842b12e0aae)
+        ;
+
+        
+    
+    
+            var marker_5faca61af60eb914568ff7425b5acd6d = L.marker(
+                [60.1604, 24.9351],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_c9006a38179ee649c1f1a7b627e626a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_5faca61af60eb914568ff7425b5acd6d.setIcon(icon_c9006a38179ee649c1f1a7b627e626a2);
+        
+    
+        var popup_1563e8b906f0d68849119bfbfaa6927f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87150608e512f7ad4c6ada70b6b52b80 = $(`<div id="html_87150608e512f7ad4c6ada70b6b52b80" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20391046>Punavuorenkatu 17</a> 1100 €/kk 58.5 m^2</div>`)[0];
+                popup_1563e8b906f0d68849119bfbfaa6927f.setContent(html_87150608e512f7ad4c6ada70b6b52b80);
+            
+        
+
+        marker_5faca61af60eb914568ff7425b5acd6d.bindPopup(popup_1563e8b906f0d68849119bfbfaa6927f)
+        ;
+
+        
+    
+    
+            var marker_39d0bea7b7aa75c835f0b2b98ba98685 = L.marker(
+                [60.1882, 24.9562],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f3da42c0168b0e737d96d59135d6f4b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_39d0bea7b7aa75c835f0b2b98ba98685.setIcon(icon_f3da42c0168b0e737d96d59135d6f4b5);
+        
+    
+        var popup_ed5572bd8c5284029fb7936a0da7b6b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05ae6fbec8bbab4ba8ac2c3a392aaa6e = $(`<div id="html_05ae6fbec8bbab4ba8ac2c3a392aaa6e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20363206>Kustaankatu 5</a> 1450 €/kk 57.4 m^2</div>`)[0];
+                popup_ed5572bd8c5284029fb7936a0da7b6b7.setContent(html_05ae6fbec8bbab4ba8ac2c3a392aaa6e);
+            
+        
+
+        marker_39d0bea7b7aa75c835f0b2b98ba98685.bindPopup(popup_ed5572bd8c5284029fb7936a0da7b6b7)
+        ;
+
+        
+    
+    
+            var marker_0eb99799b337a85fe3231e2b7aaac0bd = L.marker(
+                [60.1681, 24.9653],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_939020326970e6eb4eae253fe4aaa7d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_0eb99799b337a85fe3231e2b7aaac0bd.setIcon(icon_939020326970e6eb4eae253fe4aaa7d0);
+        
+    
+        var popup_8bf49a769d1b1ef8b634f06c955224dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3754c9acc604d589ac6574203351889 = $(`<div id="html_f3754c9acc604d589ac6574203351889" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20299492>Katajanokankatu 6</a> 1300 €/kk 90.0 m^2</div>`)[0];
+                popup_8bf49a769d1b1ef8b634f06c955224dc.setContent(html_f3754c9acc604d589ac6574203351889);
+            
+        
+
+        marker_0eb99799b337a85fe3231e2b7aaac0bd.bindPopup(popup_8bf49a769d1b1ef8b634f06c955224dc)
+        ;
+
+        
+    
+    
+            var marker_103500952586236475142d4dfecaaf03 = L.marker(
+                [60.1594, 24.9119],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_4b6f3b1be3bbaf3058494636b174357c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_103500952586236475142d4dfecaaf03.setIcon(icon_4b6f3b1be3bbaf3058494636b174357c);
+        
+    
+        var popup_bbe5fe8470afac8b6b583be12188b9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73ce42abc897c5b5a51bdd1b137672d8 = $(`<div id="html_73ce42abc897c5b5a51bdd1b137672d8" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20282417>Messitytönkatu 10 B</a> 1450 €/kk 63.5 m^2</div>`)[0];
+                popup_bbe5fe8470afac8b6b583be12188b9b0.setContent(html_73ce42abc897c5b5a51bdd1b137672d8);
+            
+        
+
+        marker_103500952586236475142d4dfecaaf03.bindPopup(popup_bbe5fe8470afac8b6b583be12188b9b0)
+        ;
+
+        
+    
+    
+            var marker_ab8fe59c9d8f079d98f560537ef111a6 = L.marker(
+                [60.1787, 24.9462],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6803b28357c4023ca4ba77b92d6fb64c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab8fe59c9d8f079d98f560537ef111a6.setIcon(icon_6803b28357c4023ca4ba77b92d6fb64c);
+        
+    
+        var popup_55e3bcf19c256ebf13f6dc7d06adf09a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17df50d6fb0f4eda3368635813ad25c6 = $(`<div id="html_17df50d6fb0f4eda3368635813ad25c6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20199061>Säästöpankinranta 8</a> 1490 €/kk 55.0 m^2</div>`)[0];
+                popup_55e3bcf19c256ebf13f6dc7d06adf09a.setContent(html_17df50d6fb0f4eda3368635813ad25c6);
+            
+        
+
+        marker_ab8fe59c9d8f079d98f560537ef111a6.bindPopup(popup_55e3bcf19c256ebf13f6dc7d06adf09a)
+        ;
+
+        
+    
+    
+            var marker_9e256f999b5845c6d38e127b9ee9a4d1 = L.marker(
+                [60.164, 24.9505],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_b878562533d7ded3bae95cfd77e10aed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_9e256f999b5845c6d38e127b9ee9a4d1.setIcon(icon_b878562533d7ded3bae95cfd77e10aed);
+        
+    
+        var popup_50ea6f68bcad0b50565193f3215ac006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0506ccbfb690888df57d0ad0034bd3e = $(`<div id="html_b0506ccbfb690888df57d0ad0034bd3e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20091482>Fabianinkatu 5 A</a> 1450 €/kk 85.0 m^2</div>`)[0];
+                popup_50ea6f68bcad0b50565193f3215ac006.setContent(html_b0506ccbfb690888df57d0ad0034bd3e);
+            
+        
+
+        marker_9e256f999b5845c6d38e127b9ee9a4d1.bindPopup(popup_50ea6f68bcad0b50565193f3215ac006)
+        ;
+
+        
+    
+    
+            var marker_076b267c98a9a2145b46aad91b6e7a80 = L.marker(
+                [60.1726, 24.9561],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_cd8ea8c58b2cbc05757f7dcbae78fb34 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_076b267c98a9a2145b46aad91b6e7a80.setIcon(icon_cd8ea8c58b2cbc05757f7dcbae78fb34);
+        
+    
+        var popup_ffa7bf72b610d1e97767b2d988641233 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d70d10875c1c9921fb864eb27193efd4 = $(`<div id="html_d70d10875c1c9921fb864eb27193efd4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20088244>Vironkatu 5</a> 1226 €/kk 64.2 m^2</div>`)[0];
+                popup_ffa7bf72b610d1e97767b2d988641233.setContent(html_d70d10875c1c9921fb864eb27193efd4);
+            
+        
+
+        marker_076b267c98a9a2145b46aad91b6e7a80.bindPopup(popup_ffa7bf72b610d1e97767b2d988641233)
+        ;
+
+        
+    
+    
+            var marker_c58fdf742b1eb9536c256541487e4793 = L.marker(
+                [60.1605, 24.9462],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_e7bd889e4c7788cd1dd7f03c72f0a04f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c58fdf742b1eb9536c256541487e4793.setIcon(icon_e7bd889e4c7788cd1dd7f03c72f0a04f);
+        
+    
+        var popup_d39c087b797bab075484b7fc25d3bf7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e65afcae3e70f5816cc3a6723fc2b43 = $(`<div id="html_7e65afcae3e70f5816cc3a6723fc2b43" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20086311>Korkeavuorenkatu 4 B</a> 1100 €/kk 56.0 m^2</div>`)[0];
+                popup_d39c087b797bab075484b7fc25d3bf7b.setContent(html_7e65afcae3e70f5816cc3a6723fc2b43);
+            
+        
+
+        marker_c58fdf742b1eb9536c256541487e4793.bindPopup(popup_d39c087b797bab075484b7fc25d3bf7b)
+        ;
+
+        
+    
+    
+            var marker_a45658d1a1dcb4a986c2c9031af305b4 = L.marker(
+                [60.1817, 24.9755],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_497dbf47132e01b6a5b1de8b097758a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_a45658d1a1dcb4a986c2c9031af305b4.setIcon(icon_497dbf47132e01b6a5b1de8b097758a4);
+        
+    
+        var popup_2c728c0022816b2f32b3431b39714270 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f824eabfdd1b5a649687e7a6aa16418 = $(`<div id="html_0f824eabfdd1b5a649687e7a6aa16418" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20085820>Fregatti Dygdenin kuja 4</a> 1442 €/kk 80.5 m^2</div>`)[0];
+                popup_2c728c0022816b2f32b3431b39714270.setContent(html_0f824eabfdd1b5a649687e7a6aa16418);
+            
+        
+
+        marker_a45658d1a1dcb4a986c2c9031af305b4.bindPopup(popup_2c728c0022816b2f32b3431b39714270)
+        ;
+
+        
+    
+    
+            var marker_a011f60b6ac36a834559bc7ba9ffa377 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_1d119a0e7e99773d9bbd4a112706f84a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a011f60b6ac36a834559bc7ba9ffa377.setIcon(icon_1d119a0e7e99773d9bbd4a112706f84a);
+        
+    
+        var popup_6637f7e0de5a79c0c0cef93d3a4671ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e5e2edb0128cadea37e5ea357a5dbbe = $(`<div id="html_0e5e2edb0128cadea37e5ea357a5dbbe" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20084810>Alppikatu 3</a> 1195 €/kk 56.0 m^2</div>`)[0];
+                popup_6637f7e0de5a79c0c0cef93d3a4671ea.setContent(html_0e5e2edb0128cadea37e5ea357a5dbbe);
+            
+        
+
+        marker_a011f60b6ac36a834559bc7ba9ffa377.bindPopup(popup_6637f7e0de5a79c0c0cef93d3a4671ea)
+        ;
+
+        
+    
+    
+            var marker_022d6e0497b68ea1ac84fca5394ca8b9 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_d4acf99f61d47f297f63444245f2ba81 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_022d6e0497b68ea1ac84fca5394ca8b9.setIcon(icon_d4acf99f61d47f297f63444245f2ba81);
+        
+    
+        var popup_0cf48d959eebc5efe4616b35cd7f4d36 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7db3840320e41967f6a40eb9b458a371 = $(`<div id="html_7db3840320e41967f6a40eb9b458a371" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20084808>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_0cf48d959eebc5efe4616b35cd7f4d36.setContent(html_7db3840320e41967f6a40eb9b458a371);
+            
+        
+
+        marker_022d6e0497b68ea1ac84fca5394ca8b9.bindPopup(popup_0cf48d959eebc5efe4616b35cd7f4d36)
+        ;
+
+        
+    
+    
+            var marker_a9f12e83947201ce154367bb0427aa7d = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_b10f60670f6f2d2dc5888f5fe389a3ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a9f12e83947201ce154367bb0427aa7d.setIcon(icon_b10f60670f6f2d2dc5888f5fe389a3ca);
+        
+    
+        var popup_e6bfc32754c532fae66e644b765b3402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50370eeddcc9a31ada1f47361dd69140 = $(`<div id="html_50370eeddcc9a31ada1f47361dd69140" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20084807>Alppikatu 3</a> 1195 €/kk 56.0 m^2</div>`)[0];
+                popup_e6bfc32754c532fae66e644b765b3402.setContent(html_50370eeddcc9a31ada1f47361dd69140);
+            
+        
+
+        marker_a9f12e83947201ce154367bb0427aa7d.bindPopup(popup_e6bfc32754c532fae66e644b765b3402)
+        ;
+
+        
+    
+    
+            var marker_9778acb4774cd59d7d5bb4691e35134d = L.marker(
+                [60.1622, 24.9375],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_30ce839981653bd56571040dcafc7128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_9778acb4774cd59d7d5bb4691e35134d.setIcon(icon_30ce839981653bd56571040dcafc7128);
+        
+    
+        var popup_8091e7178e51e7ba7236344376347a89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f4aea168b14dd56322a9f1ac901913 = $(`<div id="html_53f4aea168b14dd56322a9f1ac901913" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20084458>Iso Roobertinkatu 35-37</a> 1290 €/kk 60.5 m^2</div>`)[0];
+                popup_8091e7178e51e7ba7236344376347a89.setContent(html_53f4aea168b14dd56322a9f1ac901913);
+            
+        
+
+        marker_9778acb4774cd59d7d5bb4691e35134d.bindPopup(popup_8091e7178e51e7ba7236344376347a89)
+        ;
+
+        
+    
+    
+            var marker_ae13dfc981174927d54438531165d942 = L.marker(
+                [60.174, 24.9536],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_efba98d48051cdccf825cc79806e0426 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_ae13dfc981174927d54438531165d942.setIcon(icon_efba98d48051cdccf825cc79806e0426);
+        
+    
+        var popup_3e153b15929b7a5753d6ce5202ec297f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2986b8b9c7b99e7bd7a077e4adef9c9f = $(`<div id="html_2986b8b9c7b99e7bd7a077e4adef9c9f" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/20082605>Liisankatu 18</a> 1400 €/kk 105.5 m^2</div>`)[0];
+                popup_3e153b15929b7a5753d6ce5202ec297f.setContent(html_2986b8b9c7b99e7bd7a077e4adef9c9f);
+            
+        
+
+        marker_ae13dfc981174927d54438531165d942.bindPopup(popup_3e153b15929b7a5753d6ce5202ec297f)
+        ;
+
+        
+    
+    
+            var marker_81bae6773ab421efd2a53a0ec4ac3c8f = L.marker(
+                [60.188, 24.9154],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_008c06fd737e158f29f21dd1306fea70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_81bae6773ab421efd2a53a0ec4ac3c8f.setIcon(icon_008c06fd737e158f29f21dd1306fea70);
+        
+    
+        var popup_0b459aa296cb3eded4116bfa89b0fe8b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02252136bb51f27fc2dc6166534a29db = $(`<div id="html_02252136bb51f27fc2dc6166534a29db" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18085073>Messeniuksenkatu B</a> 1350 €/kk 60.0 m^2</div>`)[0];
+                popup_0b459aa296cb3eded4116bfa89b0fe8b.setContent(html_02252136bb51f27fc2dc6166534a29db);
+            
+        
+
+        marker_81bae6773ab421efd2a53a0ec4ac3c8f.bindPopup(popup_0b459aa296cb3eded4116bfa89b0fe8b)
+        ;
+
+        
+    
+    
+            var marker_cebbf5d281a24da35ad36c7d0dd88f0d = L.marker(
+                [60.1857, 24.9165],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f0cb213f235ebd07ea942d4bc9745093 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cebbf5d281a24da35ad36c7d0dd88f0d.setIcon(icon_f0cb213f235ebd07ea942d4bc9745093);
+        
+    
+        var popup_c4bf2fec2893e229b0ca1ca8a01cb77a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d517131e5c11112ad2b2201afcd4c384 = $(`<div id="html_d517131e5c11112ad2b2201afcd4c384" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17455017>Nordenskiöldinkatu 2</a> 1500 €/kk 70.0 m^2</div>`)[0];
+                popup_c4bf2fec2893e229b0ca1ca8a01cb77a.setContent(html_d517131e5c11112ad2b2201afcd4c384);
+            
+        
+
+        marker_cebbf5d281a24da35ad36c7d0dd88f0d.bindPopup(popup_c4bf2fec2893e229b0ca1ca8a01cb77a)
+        ;
+
+        
+    
+    
+            var marker_ea12653cedc6b9651ac026a8d329dcaa = L.marker(
+                [60.176, 24.9202],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0f2ba298814e358ae76b3ad41376864f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_ea12653cedc6b9651ac026a8d329dcaa.setIcon(icon_0f2ba298814e358ae76b3ad41376864f);
+        
+    
+        var popup_ae5dbd2db67f1f39ee0ab49ddb9dbdbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6c44238c85c160d9a7c84221cd9e809 = $(`<div id="html_d6c44238c85c160d9a7c84221cd9e809" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19968380>Eteläinen Hesperiankatu 30</a> 1200 €/kk 72.5 m^2</div>`)[0];
+                popup_ae5dbd2db67f1f39ee0ab49ddb9dbdbe.setContent(html_d6c44238c85c160d9a7c84221cd9e809);
+            
+        
+
+        marker_ea12653cedc6b9651ac026a8d329dcaa.bindPopup(popup_ae5dbd2db67f1f39ee0ab49ddb9dbdbe)
+        ;
+
+        
+    
+    
+            var marker_59c325d5db0fbe7759dd22d4e187cd71 = L.marker(
+                [60.1568, 24.9451],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_b4be6d929feb21c585e7520b8ca9f475 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_59c325d5db0fbe7759dd22d4e187cd71.setIcon(icon_b4be6d929feb21c585e7520b8ca9f475);
+        
+    
+        var popup_6c9e65f0e7b83a5e55df6df0dcf4e755 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd1b5a86d583b77a67c69a7406c504a4 = $(`<div id="html_bd1b5a86d583b77a67c69a7406c504a4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19773455>Kapteeninkatu 8 D</a> 1280 €/kk 55.4 m^2</div>`)[0];
+                popup_6c9e65f0e7b83a5e55df6df0dcf4e755.setContent(html_bd1b5a86d583b77a67c69a7406c504a4);
+            
+        
+
+        marker_59c325d5db0fbe7759dd22d4e187cd71.bindPopup(popup_6c9e65f0e7b83a5e55df6df0dcf4e755)
+        ;
+
+        
+    
+    
+            var marker_3b529eb0b29aed46a1fec48fa7d35803 = L.marker(
+                [60.188, 24.9678],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_048e3a2c1bfaed80cc63f1cb1e8fcd66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3b529eb0b29aed46a1fec48fa7d35803.setIcon(icon_048e3a2c1bfaed80cc63f1cb1e8fcd66);
+        
+    
+        var popup_767fde1056b581967d61f227a39ca371 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dc3d06d673e64aa2661fa04f264e9717 = $(`<div id="html_dc3d06d673e64aa2661fa04f264e9717" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19796634>Suvilahdenkatu 9</a> 1190 €/kk 55.5 m^2</div>`)[0];
+                popup_767fde1056b581967d61f227a39ca371.setContent(html_dc3d06d673e64aa2661fa04f264e9717);
+            
+        
+
+        marker_3b529eb0b29aed46a1fec48fa7d35803.bindPopup(popup_767fde1056b581967d61f227a39ca371)
+        ;
+
+        
+    
+    
+            var marker_6c4c55a283de73845692bd575774e897 = L.marker(
+                [60.1866, 24.9168],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_59a954cc7b86c97a3709c90b308b93c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_6c4c55a283de73845692bd575774e897.setIcon(icon_59a954cc7b86c97a3709c90b308b93c5);
+        
+    
+        var popup_72462c29b348aed0f3535928b878dd9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68a7d825ff9e9968f333030a085312c2 = $(`<div id="html_68a7d825ff9e9968f333030a085312c2" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19753521>Minna Canthin katu 16</a> 1500 €/kk 77.0 m^2</div>`)[0];
+                popup_72462c29b348aed0f3535928b878dd9f.setContent(html_68a7d825ff9e9968f333030a085312c2);
+            
+        
+
+        marker_6c4c55a283de73845692bd575774e897.bindPopup(popup_72462c29b348aed0f3535928b878dd9f)
+        ;
+
+        
+    
+    
+            var marker_6b0fddd0900bbd7b91d916cefd87b14e = L.marker(
+                [60.1882, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_9d722fe746b7fdd5754e7feebe9ac6c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6b0fddd0900bbd7b91d916cefd87b14e.setIcon(icon_9d722fe746b7fdd5754e7feebe9ac6c0);
+        
+    
+        var popup_e12720ac75b34518c011c05b501c66eb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c285715cf669e6989ffa9ca1e285e75a = $(`<div id="html_c285715cf669e6989ffa9ca1e285e75a" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19584729>Vaasankatu 2</a> 1350 €/kk 66.0 m^2</div>`)[0];
+                popup_e12720ac75b34518c011c05b501c66eb.setContent(html_c285715cf669e6989ffa9ca1e285e75a);
+            
+        
+
+        marker_6b0fddd0900bbd7b91d916cefd87b14e.bindPopup(popup_e12720ac75b34518c011c05b501c66eb)
+        ;
+
+        
+    
+    
+            var marker_ff7dc903e51a0811cb0e007fc9d51f1f = L.marker(
+                [60.1984, 24.9622],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_199fda55694b7e2a9703dfe53b6fd1d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ff7dc903e51a0811cb0e007fc9d51f1f.setIcon(icon_199fda55694b7e2a9703dfe53b6fd1d2);
+        
+    
+        var popup_0d41e2208be28399a04d59adf99ae564 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e25d0874a570c61c4a56991f56a1399 = $(`<div id="html_2e25d0874a570c61c4a56991f56a1399" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19546920>Hämeentie 101 B 34</a> 1090 €/kk 55.6 m^2</div>`)[0];
+                popup_0d41e2208be28399a04d59adf99ae564.setContent(html_2e25d0874a570c61c4a56991f56a1399);
+            
+        
+
+        marker_ff7dc903e51a0811cb0e007fc9d51f1f.bindPopup(popup_0d41e2208be28399a04d59adf99ae564)
+        ;
+
+        
+    
+    
+            var marker_809365113403722f360b13bd94cb62e6 = L.marker(
+                [60.1848, 24.963],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_fb5a303bcc9bc5998ee75cd2a46ba6bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_809365113403722f360b13bd94cb62e6.setIcon(icon_fb5a303bcc9bc5998ee75cd2a46ba6bd);
+        
+    
+        var popup_3f4c4c406a28d5ff439332baae30323a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_517c895eb5d78dcdb333ce788e3fb11d = $(`<div id="html_517c895eb5d78dcdb333ce788e3fb11d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19342856>Lintulahdenaukio 10</a> 1200 €/kk 59.5 m^2</div>`)[0];
+                popup_3f4c4c406a28d5ff439332baae30323a.setContent(html_517c895eb5d78dcdb333ce788e3fb11d);
+            
+        
+
+        marker_809365113403722f360b13bd94cb62e6.bindPopup(popup_3f4c4c406a28d5ff439332baae30323a)
+        ;
+
+        
+    
+    
+            var marker_d8bfd1d0695fd0c9eb592e22e257c8c7 = L.marker(
+                [60.1592, 24.9085],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ef571dc1d50e6c2d7ee2b642e9f5ecc0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_d8bfd1d0695fd0c9eb592e22e257c8c7.setIcon(icon_ef571dc1d50e6c2d7ee2b642e9f5ecc0);
+        
+    
+        var popup_d40f2eaa55f1e17f041518f772193249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d31e7a5158a382dd689a2d5200762293 = $(`<div id="html_d31e7a5158a382dd689a2d5200762293" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17531272>Saukonpaadenranta 4 D</a> 1261 €/kk 55.5 m^2</div>`)[0];
+                popup_d40f2eaa55f1e17f041518f772193249.setContent(html_d31e7a5158a382dd689a2d5200762293);
+            
+        
+
+        marker_d8bfd1d0695fd0c9eb592e22e257c8c7.bindPopup(popup_d40f2eaa55f1e17f041518f772193249)
+        ;
+
+        
+    
+    
+            var marker_bcdff6301bd69da13ee77417af9ea20a = L.marker(
+                [60.1807, 24.9618],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_d4a043c577f0afb2a571ae3777d04f60 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bcdff6301bd69da13ee77417af9ea20a.setIcon(icon_d4a043c577f0afb2a571ae3777d04f60);
+        
+    
+        var popup_b25b74416e74743ac11127fceb38e667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e35c731fb59ddbf7cd4579274c06369 = $(`<div id="html_8e35c731fb59ddbf7cd4579274c06369" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19297127>Hakaniemenranta 30</a> 1175 €/kk 60.0 m^2</div>`)[0];
+                popup_b25b74416e74743ac11127fceb38e667.setContent(html_8e35c731fb59ddbf7cd4579274c06369);
+            
+        
+
+        marker_bcdff6301bd69da13ee77417af9ea20a.bindPopup(popup_b25b74416e74743ac11127fceb38e667)
+        ;
+
+        
+    
+    
+            var marker_d5a73282b840f6565b608581c523af82 = L.marker(
+                [60.1801, 24.9546],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_cb452f74ce91d119b838cd5ecccd4908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d5a73282b840f6565b608581c523af82.setIcon(icon_cb452f74ce91d119b838cd5ecccd4908);
+        
+    
+        var popup_43bcac08e628f778eb79e55922113b1b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7e8d5c3e664adf828a0353e8b2336b7 = $(`<div id="html_a7e8d5c3e664adf828a0353e8b2336b7" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19228103>Näkinkuja 6 B</a> 1259 €/kk 59.5 m^2</div>`)[0];
+                popup_43bcac08e628f778eb79e55922113b1b.setContent(html_a7e8d5c3e664adf828a0353e8b2336b7);
+            
+        
+
+        marker_d5a73282b840f6565b608581c523af82.bindPopup(popup_43bcac08e628f778eb79e55922113b1b)
+        ;
+
+        
+    
+    
+            var marker_a355b9e108a3af91996558ff68540ae3 = L.marker(
+                [60.1825, 24.9545],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_9b5a49a7177450a31e621be752ef43df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a355b9e108a3af91996558ff68540ae3.setIcon(icon_9b5a49a7177450a31e621be752ef43df);
+        
+    
+        var popup_f0d9e40a9470091192c6ffc8e583ee04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97a197b3f6824c05bdab910a687a5eb0 = $(`<div id="html_97a197b3f6824c05bdab910a687a5eb0" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19215215>Viides linja 4</a> 1281 €/kk 62.6 m^2</div>`)[0];
+                popup_f0d9e40a9470091192c6ffc8e583ee04.setContent(html_97a197b3f6824c05bdab910a687a5eb0);
+            
+        
+
+        marker_a355b9e108a3af91996558ff68540ae3.bindPopup(popup_f0d9e40a9470091192c6ffc8e583ee04)
+        ;
+
+        
+    
+    
+            var marker_e03ca64edd45e3d1d2228d817dcc420d = L.marker(
+                [60.1811, 24.9502],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a498fc354e6ceff84ddfef684964f92c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_e03ca64edd45e3d1d2228d817dcc420d.setIcon(icon_a498fc354e6ceff84ddfef684964f92c);
+        
+    
+        var popup_78a1d024e6e36a4c8944cc8ecdaa9085 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31fafb87f9c70f58824ae59040669955 = $(`<div id="html_31fafb87f9c70f58824ae59040669955" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19215214>Porthaninkatu 1</a> 1472 €/kk 66.5 m^2</div>`)[0];
+                popup_78a1d024e6e36a4c8944cc8ecdaa9085.setContent(html_31fafb87f9c70f58824ae59040669955);
+            
+        
+
+        marker_e03ca64edd45e3d1d2228d817dcc420d.bindPopup(popup_78a1d024e6e36a4c8944cc8ecdaa9085)
+        ;
+
+        
+    
+    
+            var marker_f0e21a9e16a84f73f97dcbccdbc64846 = L.marker(
+                [60.1909, 24.9697],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_ce6b5d7f9a4352ce20191e422a3d31a9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_f0e21a9e16a84f73f97dcbccdbc64846.setIcon(icon_ce6b5d7f9a4352ce20191e422a3d31a9);
+        
+    
+        var popup_d8da467e679d968751c95216530f8ed4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef29f123569aae71817b9a6b81e54fe7 = $(`<div id="html_ef29f123569aae71817b9a6b81e54fe7" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19214825>Sörnäistenkatu 10 A</a> 1318 €/kk 61.5 m^2</div>`)[0];
+                popup_d8da467e679d968751c95216530f8ed4.setContent(html_ef29f123569aae71817b9a6b81e54fe7);
+            
+        
+
+        marker_f0e21a9e16a84f73f97dcbccdbc64846.bindPopup(popup_d8da467e679d968751c95216530f8ed4)
+        ;
+
+        
+    
+    
+            var marker_f110f4be8a6c9422eed551691963519b = L.marker(
+                [60.1577, 24.9192],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_87fe1e29ed9ea7c59f7dfcbd317cc578 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_f110f4be8a6c9422eed551691963519b.setIcon(icon_87fe1e29ed9ea7c59f7dfcbd317cc578);
+        
+    
+        var popup_64f25877f0785de7c2e5a3dbd624bf0e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e1202b19a9389cbb199033777a30c2a = $(`<div id="html_4e1202b19a9389cbb199033777a30c2a" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19207740>Kap Hornin katu 8</a> 1230 €/kk 55.0 m^2</div>`)[0];
+                popup_64f25877f0785de7c2e5a3dbd624bf0e.setContent(html_4e1202b19a9389cbb199033777a30c2a);
+            
+        
+
+        marker_f110f4be8a6c9422eed551691963519b.bindPopup(popup_64f25877f0785de7c2e5a3dbd624bf0e)
+        ;
+
+        
+    
+    
+            var marker_a2c29751b425782eeea87b659319bf64 = L.marker(
+                [60.1859, 24.9662],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_371ddaf0b560fe598395f3adfed19499 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a2c29751b425782eeea87b659319bf64.setIcon(icon_371ddaf0b560fe598395f3adfed19499);
+        
+    
+        var popup_8e582552a021218d2eb3d84ca6adc0f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29697e4cb02ddc38a090513ba47a829b = $(`<div id="html_29697e4cb02ddc38a090513ba47a829b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19204051>Käenkuja 8</a> 1178 €/kk 55.0 m^2</div>`)[0];
+                popup_8e582552a021218d2eb3d84ca6adc0f1.setContent(html_29697e4cb02ddc38a090513ba47a829b);
+            
+        
+
+        marker_a2c29751b425782eeea87b659319bf64.bindPopup(popup_8e582552a021218d2eb3d84ca6adc0f1)
+        ;
+
+        
+    
+    
+            var marker_ba51162b4172807c75d1ccc053847286 = L.marker(
+                [60.1807, 24.9618],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_63961c56a85778e3722f386d01bd1a3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ba51162b4172807c75d1ccc053847286.setIcon(icon_63961c56a85778e3722f386d01bd1a3a);
+        
+    
+        var popup_75519bdb9fa06078ef71daa897d96d9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b8889ab36e69cc141916204dbac9f170 = $(`<div id="html_b8889ab36e69cc141916204dbac9f170" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19203882>Hakaniemenranta 30</a> 1450 €/kk 71.5 m^2</div>`)[0];
+                popup_75519bdb9fa06078ef71daa897d96d9f.setContent(html_b8889ab36e69cc141916204dbac9f170);
+            
+        
+
+        marker_ba51162b4172807c75d1ccc053847286.bindPopup(popup_75519bdb9fa06078ef71daa897d96d9f)
+        ;
+
+        
+    
+    
+            var marker_95992974ae84ef05b5adb59d9dcf7012 = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_5457429251d95849a3ee26d459e080c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_95992974ae84ef05b5adb59d9dcf7012.setIcon(icon_5457429251d95849a3ee26d459e080c8);
+        
+    
+        var popup_b05a91068c9bc242866b40b5f305e389 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4497444244f182342c5d0260230ec4ae = $(`<div id="html_4497444244f182342c5d0260230ec4ae" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19203640>Eerikinkatu 41</a> 1225 €/kk 56.0 m^2</div>`)[0];
+                popup_b05a91068c9bc242866b40b5f305e389.setContent(html_4497444244f182342c5d0260230ec4ae);
+            
+        
+
+        marker_95992974ae84ef05b5adb59d9dcf7012.bindPopup(popup_b05a91068c9bc242866b40b5f305e389)
+        ;
+
+        
+    
+    
+            var marker_5975693239f0cce5f6a1efe640224014 = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_525dd23cbaf4e4147570e2438ddedceb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5975693239f0cce5f6a1efe640224014.setIcon(icon_525dd23cbaf4e4147570e2438ddedceb);
+        
+    
+        var popup_fac439c373b5a89bd9e925c7ac6bbe03 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b0867f6374c9500c87863b7e4bf3b8d = $(`<div id="html_5b0867f6374c9500c87863b7e4bf3b8d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19203443>Eerikinkatu 41</a> 1230 €/kk 59.0 m^2</div>`)[0];
+                popup_fac439c373b5a89bd9e925c7ac6bbe03.setContent(html_5b0867f6374c9500c87863b7e4bf3b8d);
+            
+        
+
+        marker_5975693239f0cce5f6a1efe640224014.bindPopup(popup_fac439c373b5a89bd9e925c7ac6bbe03)
+        ;
+
+        
+    
+    
+            var marker_387223d15d38511f6d603340965b081f = L.marker(
+                [60.1823, 24.9469],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_65c80e11b4712a9a9ca08465c48a1ca1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_387223d15d38511f6d603340965b081f.setIcon(icon_65c80e11b4712a9a9ca08465c48a1ca1);
+        
+    
+        var popup_10e04fbb716648c3c6a8a4d1ad12fe26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e59f250da3c88d8cf18bdd48874714f = $(`<div id="html_6e59f250da3c88d8cf18bdd48874714f" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19202702>Toinen linja 15 B</a> 1390 €/kk 75.5 m^2</div>`)[0];
+                popup_10e04fbb716648c3c6a8a4d1ad12fe26.setContent(html_6e59f250da3c88d8cf18bdd48874714f);
+            
+        
+
+        marker_387223d15d38511f6d603340965b081f.bindPopup(popup_10e04fbb716648c3c6a8a4d1ad12fe26)
+        ;
+
+        
+    
+    
+            var marker_88bc104fb9c27aa2460c8edad8354035 = L.marker(
+                [60.1678, 24.9644],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6598c7445a6aedecd0a7a302b68c7878 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_88bc104fb9c27aa2460c8edad8354035.setIcon(icon_6598c7445a6aedecd0a7a302b68c7878);
+        
+    
+        var popup_890d15b953251052349b1a8f96c16e1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4a2e95b899317580f3fe1a883f80e477 = $(`<div id="html_4a2e95b899317580f3fe1a883f80e477" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/19201365>Luotsikatu 6</a> 1295 €/kk 62.0 m^2</div>`)[0];
+                popup_890d15b953251052349b1a8f96c16e1d.setContent(html_4a2e95b899317580f3fe1a883f80e477);
+            
+        
+
+        marker_88bc104fb9c27aa2460c8edad8354035.bindPopup(popup_890d15b953251052349b1a8f96c16e1d)
+        ;
+
+        
+    
+    
+            var marker_c52085fa61a953586058f616133b23a6 = L.marker(
+                [60.1934, 24.9668],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_3a4ebb10afd018dd49aa327a769e7779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_c52085fa61a953586058f616133b23a6.setIcon(icon_3a4ebb10afd018dd49aa327a769e7779);
+        
+    
+        var popup_3a7141cc42589d4207e3841e2c795ab5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cce5146476cd8538bc6d27d2f5241c4 = $(`<div id="html_3cce5146476cd8538bc6d27d2f5241c4" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18985636>Vellamonkatu 3 a</a> 1320 €/kk 58.0 m^2</div>`)[0];
+                popup_3a7141cc42589d4207e3841e2c795ab5.setContent(html_3cce5146476cd8538bc6d27d2f5241c4);
+            
+        
+
+        marker_c52085fa61a953586058f616133b23a6.bindPopup(popup_3a7141cc42589d4207e3841e2c795ab5)
+        ;
+
+        
+    
+    
+            var marker_f81bf2de108ac6c795a1b2808e9aa13e = L.marker(
+                [60.1807, 24.9618],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_fb02bf35fc170f8f874ca0cedad5148c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f81bf2de108ac6c795a1b2808e9aa13e.setIcon(icon_fb02bf35fc170f8f874ca0cedad5148c);
+        
+    
+        var popup_acffbf5f71301c58fc4825235d5f9367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d40ff99ea1957e1e4d5d782d854cbfb2 = $(`<div id="html_d40ff99ea1957e1e4d5d782d854cbfb2" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18975957>Hakaniemenranta 30</a> 1448 €/kk 71.5 m^2</div>`)[0];
+                popup_acffbf5f71301c58fc4825235d5f9367.setContent(html_d40ff99ea1957e1e4d5d782d854cbfb2);
+            
+        
+
+        marker_f81bf2de108ac6c795a1b2808e9aa13e.bindPopup(popup_acffbf5f71301c58fc4825235d5f9367)
+        ;
+
+        
+    
+    
+            var marker_bc86ed44353929a670a3a430cb724577 = L.marker(
+                [60.1796, 24.9252],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_88059b4bf890a6d8f004ee219e1ab881 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_bc86ed44353929a670a3a430cb724577.setIcon(icon_88059b4bf890a6d8f004ee219e1ab881);
+        
+    
+        var popup_857b46d28a4f1e449342d0e326662c7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd21ed386068c48746c729a6e5a38d93 = $(`<div id="html_dd21ed386068c48746c729a6e5a38d93" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17808617>Töölönkatu 32b A</a> 1240 €/kk 76.0 m^2</div>`)[0];
+                popup_857b46d28a4f1e449342d0e326662c7b.setContent(html_dd21ed386068c48746c729a6e5a38d93);
+            
+        
+
+        marker_bc86ed44353929a670a3a430cb724577.bindPopup(popup_857b46d28a4f1e449342d0e326662c7b)
+        ;
+
+        
+    
+    
+            var marker_5124d8efa1ad4111173f2c752808f41f = L.marker(
+                [60.1656, 24.9707],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_8269b5930deb6c14b3065e0903a8e064 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5124d8efa1ad4111173f2c752808f41f.setIcon(icon_8269b5930deb6c14b3065e0903a8e064);
+        
+    
+        var popup_6533dd3e407f6b8e52061b1d2e49ccea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_955a7130f5046410bbe785af63ad2589 = $(`<div id="html_955a7130f5046410bbe785af63ad2589" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18437464>Linnankatu 11</a> 1499 €/kk 60.5 m^2</div>`)[0];
+                popup_6533dd3e407f6b8e52061b1d2e49ccea.setContent(html_955a7130f5046410bbe785af63ad2589);
+            
+        
+
+        marker_5124d8efa1ad4111173f2c752808f41f.bindPopup(popup_6533dd3e407f6b8e52061b1d2e49ccea)
+        ;
+
+        
+    
+    
+            var marker_31f1f302c9dc09c2a35051e64e36c9bd = L.marker(
+                [60.1656, 24.9707],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_61b70a9718857611aa51e5f4799767d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_31f1f302c9dc09c2a35051e64e36c9bd.setIcon(icon_61b70a9718857611aa51e5f4799767d7);
+        
+    
+        var popup_68bfaf94c09fbdb98b58a5d9dedc3752 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da0750bfb509a523b56249d0e8e3402a = $(`<div id="html_da0750bfb509a523b56249d0e8e3402a" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18423095>Linnankatu 11</a> 1420 €/kk 63.5 m^2</div>`)[0];
+                popup_68bfaf94c09fbdb98b58a5d9dedc3752.setContent(html_da0750bfb509a523b56249d0e8e3402a);
+            
+        
+
+        marker_31f1f302c9dc09c2a35051e64e36c9bd.bindPopup(popup_68bfaf94c09fbdb98b58a5d9dedc3752)
+        ;
+
+        
+    
+    
+            var marker_48dcd150d18c4d8edd9704f181f9823c = L.marker(
+                [60.1704, 24.9197],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_db84213a546b2ec48d33a7f3bae85262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_48dcd150d18c4d8edd9704f181f9823c.setIcon(icon_db84213a546b2ec48d33a7f3bae85262);
+        
+    
+        var popup_eee4461f90d18f318ba87b6eede6598f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5e035f68cb5ed9f5ad10b7ed85f41872 = $(`<div id="html_5e035f68cb5ed9f5ad10b7ed85f41872" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18196066>Hietaniemenkatu 19</a> 1390 €/kk 61.5 m^2</div>`)[0];
+                popup_eee4461f90d18f318ba87b6eede6598f.setContent(html_5e035f68cb5ed9f5ad10b7ed85f41872);
+            
+        
+
+        marker_48dcd150d18c4d8edd9704f181f9823c.bindPopup(popup_eee4461f90d18f318ba87b6eede6598f)
+        ;
+
+        
+    
+    
+            var marker_e2570ada61d7dfe3cc5bb9995f260ff4 = L.marker(
+                [60.1846, 24.9621],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_63b64f6e22c9f41336c8f09f692ec5e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_e2570ada61d7dfe3cc5bb9995f260ff4.setIcon(icon_63b64f6e22c9f41336c8f09f692ec5e7);
+        
+    
+        var popup_b3191bb333e144b2e6983562e8be2da5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29a9d82615e6e8861f38f56890ab8934 = $(`<div id="html_29a9d82615e6e8861f38f56890ab8934" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18191224>Lintulahdenaukio 6</a> 1448 €/kk 67.0 m^2</div>`)[0];
+                popup_b3191bb333e144b2e6983562e8be2da5.setContent(html_29a9d82615e6e8861f38f56890ab8934);
+            
+        
+
+        marker_e2570ada61d7dfe3cc5bb9995f260ff4.bindPopup(popup_b3191bb333e144b2e6983562e8be2da5)
+        ;
+
+        
+    
+    
+            var marker_eb154714ddd173a7f3af5f2d1b22a658 = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_2ad0feb98a33355096ab78c8ca5ce4b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_eb154714ddd173a7f3af5f2d1b22a658.setIcon(icon_2ad0feb98a33355096ab78c8ca5ce4b3);
+        
+    
+        var popup_1705b514ec41c2a9e99a9db1dd13bea2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ad7b0d1f3449df4416b1159846a19a5 = $(`<div id="html_6ad7b0d1f3449df4416b1159846a19a5" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18087804>Eerikinkatu 41</a> 1320 €/kk 63.5 m^2</div>`)[0];
+                popup_1705b514ec41c2a9e99a9db1dd13bea2.setContent(html_6ad7b0d1f3449df4416b1159846a19a5);
+            
+        
+
+        marker_eb154714ddd173a7f3af5f2d1b22a658.bindPopup(popup_1705b514ec41c2a9e99a9db1dd13bea2)
+        ;
+
+        
+    
+    
+            var marker_78511f4c40899afaa0493573d1313326 = L.marker(
+                [60.1641, 24.9315],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_affe634b1b2d1ca242b63e8688462843 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_78511f4c40899afaa0493573d1313326.setIcon(icon_affe634b1b2d1ca242b63e8688462843);
+        
+    
+        var popup_f1ee539f6b095596c838af8078a060b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd3e084e772595c764449808a3bcc301 = $(`<div id="html_bd3e084e772595c764449808a3bcc301" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18086177>Lönnrotinkatu 31 B</a> 1150 €/kk 68.0 m^2</div>`)[0];
+                popup_f1ee539f6b095596c838af8078a060b2.setContent(html_bd3e084e772595c764449808a3bcc301);
+            
+        
+
+        marker_78511f4c40899afaa0493573d1313326.bindPopup(popup_f1ee539f6b095596c838af8078a060b2)
+        ;
+
+        
+    
+    
+            var marker_5ecaff628aa96b69938a8655ce255300 = L.marker(
+                [60.1885, 24.9568],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_f437d347f8f8ca8a973f03c4bda73e20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5ecaff628aa96b69938a8655ce255300.setIcon(icon_f437d347f8f8ca8a973f03c4bda73e20);
+        
+    
+        var popup_802254a9c9948e6972d147f333f73907 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab494f54fac687945c1fd814043663c8 = $(`<div id="html_ab494f54fac687945c1fd814043663c8" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18085389>Vaasankatu 17</a> 1478 €/kk 74.5 m^2</div>`)[0];
+                popup_802254a9c9948e6972d147f333f73907.setContent(html_ab494f54fac687945c1fd814043663c8);
+            
+        
+
+        marker_5ecaff628aa96b69938a8655ce255300.bindPopup(popup_802254a9c9948e6972d147f333f73907)
+        ;
+
+        
+    
+    
+            var marker_d5dd46c234cb0213b51ef15e0b509c4c = L.marker(
+                [60.1631, 24.9087],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6309b685fcc131fd914bd0660d7e3dcc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d5dd46c234cb0213b51ef15e0b509c4c.setIcon(icon_6309b685fcc131fd914bd0660d7e3dcc);
+        
+    
+        var popup_a24cad7fe7a6174848ea53e6e93056fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8fcfba5a81f19e1b685ab9f1a290a5b = $(`<div id="html_d8fcfba5a81f19e1b685ab9f1a290a5b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/18080180>Itämerenkatu 26</a> 1220 €/kk 57.5 m^2</div>`)[0];
+                popup_a24cad7fe7a6174848ea53e6e93056fd.setContent(html_d8fcfba5a81f19e1b685ab9f1a290a5b);
+            
+        
+
+        marker_d5dd46c234cb0213b51ef15e0b509c4c.bindPopup(popup_a24cad7fe7a6174848ea53e6e93056fd)
+        ;
+
+        
+    
+    
+            var marker_1ab2a2e722ddcc9a66f07502ab1c6b9c = L.marker(
+                [60.1644, 24.9291],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_901048b36126b645ca29f7a4994dbe24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_1ab2a2e722ddcc9a66f07502ab1c6b9c.setIcon(icon_901048b36126b645ca29f7a4994dbe24);
+        
+    
+        var popup_d969b1f0eefade378f491e395d77592d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ec964de56f11b7116e8b8d2f3c016bf = $(`<div id="html_1ec964de56f11b7116e8b8d2f3c016bf" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17868809>Abrahaminkatu 11 B</a> 1080 €/kk 62.5 m^2</div>`)[0];
+                popup_d969b1f0eefade378f491e395d77592d.setContent(html_1ec964de56f11b7116e8b8d2f3c016bf);
+            
+        
+
+        marker_1ab2a2e722ddcc9a66f07502ab1c6b9c.bindPopup(popup_d969b1f0eefade378f491e395d77592d)
+        ;
+
+        
+    
+    
+            var marker_2bc90e010f0c9244fd3d272c38760621 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6f765d67fff5add2d8f60de65995a1b2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2bc90e010f0c9244fd3d272c38760621.setIcon(icon_6f765d67fff5add2d8f60de65995a1b2);
+        
+    
+        var popup_781a992f51dc234fb9fc52b01730635c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b941bee215a38da2d9a1a3f0dc879734 = $(`<div id="html_b941bee215a38da2d9a1a3f0dc879734" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17867972>Alppikatu 3</a> 1195 €/kk 56.0 m^2</div>`)[0];
+                popup_781a992f51dc234fb9fc52b01730635c.setContent(html_b941bee215a38da2d9a1a3f0dc879734);
+            
+        
+
+        marker_2bc90e010f0c9244fd3d272c38760621.bindPopup(popup_781a992f51dc234fb9fc52b01730635c)
+        ;
+
+        
+    
+    
+            var marker_31fef6c87a7297f227df3eec97c601a9 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_d7638ac4fb8342e8e498ee2cc720e0de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_31fef6c87a7297f227df3eec97c601a9.setIcon(icon_d7638ac4fb8342e8e498ee2cc720e0de);
+        
+    
+        var popup_17eb92fa2e51ef931bb43fb5a1813473 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00704078b21d41e3347c692a6a17dcee = $(`<div id="html_00704078b21d41e3347c692a6a17dcee" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17867971>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_17eb92fa2e51ef931bb43fb5a1813473.setContent(html_00704078b21d41e3347c692a6a17dcee);
+            
+        
+
+        marker_31fef6c87a7297f227df3eec97c601a9.bindPopup(popup_17eb92fa2e51ef931bb43fb5a1813473)
+        ;
+
+        
+    
+    
+            var marker_c94c914247ecc6b8c98738807fcb3bea = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_dae2cc2984a5375e910c506ee47fddd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c94c914247ecc6b8c98738807fcb3bea.setIcon(icon_dae2cc2984a5375e910c506ee47fddd8);
+        
+    
+        var popup_50aafdb9e8154e4ce5c7576325eb0b1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2708c7d37bb71b3f2fcaa2c020d1c84b = $(`<div id="html_2708c7d37bb71b3f2fcaa2c020d1c84b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17867969>Alppikatu 3</a> 1190 €/kk 56.0 m^2</div>`)[0];
+                popup_50aafdb9e8154e4ce5c7576325eb0b1e.setContent(html_2708c7d37bb71b3f2fcaa2c020d1c84b);
+            
+        
+
+        marker_c94c914247ecc6b8c98738807fcb3bea.bindPopup(popup_50aafdb9e8154e4ce5c7576325eb0b1e)
+        ;
+
+        
+    
+    
+            var marker_071c80abbfd3434b239873b2880c030b = L.marker(
+                [60.177, 24.9273],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_96da8a4aa3b0b8bdc9c2f02cfd64e7d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_071c80abbfd3434b239873b2880c030b.setIcon(icon_96da8a4aa3b0b8bdc9c2f02cfd64e7d4);
+        
+    
+        var popup_c97aac73e2949ab47c344d66dde7c048 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f7eb160f8abb0a03eab12a4d4125454 = $(`<div id="html_0f7eb160f8abb0a03eab12a4d4125454" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17222930>Vänrikki Stoolin katu 11 B</a> 850 €/kk 60.0 m^2</div>`)[0];
+                popup_c97aac73e2949ab47c344d66dde7c048.setContent(html_0f7eb160f8abb0a03eab12a4d4125454);
+            
+        
+
+        marker_071c80abbfd3434b239873b2880c030b.bindPopup(popup_c97aac73e2949ab47c344d66dde7c048)
+        ;
+
+        
+    
+    
+            var marker_d84939b8663f6eb8bb49edc447a1a71c = L.marker(
+                [60.1846, 24.9462],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7762f9b82db321ab0131c3461f1dfc3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d84939b8663f6eb8bb49edc447a1a71c.setIcon(icon_7762f9b82db321ab0131c3461f1dfc3d);
+        
+    
+        var popup_37751334216872210a711d0443002a00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5352896f610c0c9cdc7a5aca7d6a4d18 = $(`<div id="html_5352896f610c0c9cdc7a5aca7d6a4d18" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17863416>Castréninkatu 5</a> 1450 €/kk 59.0 m^2</div>`)[0];
+                popup_37751334216872210a711d0443002a00.setContent(html_5352896f610c0c9cdc7a5aca7d6a4d18);
+            
+        
+
+        marker_d84939b8663f6eb8bb49edc447a1a71c.bindPopup(popup_37751334216872210a711d0443002a00)
+        ;
+
+        
+    
+    
+            var marker_ec3316ad3e7b689faa9b1deb627eab6c = L.marker(
+                [60.1755, 24.9575],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_96bfef14441891e910ccddbc797ede00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_ec3316ad3e7b689faa9b1deb627eab6c.setIcon(icon_96bfef14441891e910ccddbc797ede00);
+        
+    
+        var popup_6732e3a7eaf352afcdb092ab5777ec7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f932a24ce981a31755093ee4a9107dcc = $(`<div id="html_f932a24ce981a31755093ee4a9107dcc" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17846806>Kristianinkatu 8</a> 1240 €/kk 72.0 m^2</div>`)[0];
+                popup_6732e3a7eaf352afcdb092ab5777ec7f.setContent(html_f932a24ce981a31755093ee4a9107dcc);
+            
+        
+
+        marker_ec3316ad3e7b689faa9b1deb627eab6c.bindPopup(popup_6732e3a7eaf352afcdb092ab5777ec7f)
+        ;
+
+        
+    
+    
+            var marker_5b58fdec1df05984bdae3dd81eacf478 = L.marker(
+                [60.1705, 24.9469],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_5d4f22f551e7c6a2122dc7d9b811a2fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b58fdec1df05984bdae3dd81eacf478.setIcon(icon_5d4f22f551e7c6a2122dc7d9b811a2fc);
+        
+    
+        var popup_ba0b76303be3b1c72be79ac82b92cfaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55357faa3c9a0f42ab42936cddfdf2a6 = $(`<div id="html_55357faa3c9a0f42ab42936cddfdf2a6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17828256>Vuorikatu 6</a> 1400 €/kk 60.0 m^2</div>`)[0];
+                popup_ba0b76303be3b1c72be79ac82b92cfaf.setContent(html_55357faa3c9a0f42ab42936cddfdf2a6);
+            
+        
+
+        marker_5b58fdec1df05984bdae3dd81eacf478.bindPopup(popup_ba0b76303be3b1c72be79ac82b92cfaf)
+        ;
+
+        
+    
+    
+            var marker_26eac7a93719a28a07cdc99af48ce57b = L.marker(
+                [60.1811, 24.9502],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a156896292d30d5e0db858cddf7c6e74 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_26eac7a93719a28a07cdc99af48ce57b.setIcon(icon_a156896292d30d5e0db858cddf7c6e74);
+        
+    
+        var popup_ae3aedf6cd96ef67742f9b488a6341d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47325770018d03293984a2d3a0f4aab6 = $(`<div id="html_47325770018d03293984a2d3a0f4aab6" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17815537>Porthaninkatu 1</a> 1252 €/kk 56.5 m^2</div>`)[0];
+                popup_ae3aedf6cd96ef67742f9b488a6341d0.setContent(html_47325770018d03293984a2d3a0f4aab6);
+            
+        
+
+        marker_26eac7a93719a28a07cdc99af48ce57b.bindPopup(popup_ae3aedf6cd96ef67742f9b488a6341d0)
+        ;
+
+        
+    
+    
+            var marker_2ecfda6ba3dc8d5df52825203fba9285 = L.marker(
+                [60.1882, 24.9152],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7b9096dcec3e850f150e30b6331d8d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_2ecfda6ba3dc8d5df52825203fba9285.setIcon(icon_7b9096dcec3e850f150e30b6331d8d2c);
+        
+    
+        var popup_5fefc6a74afedd95154754dd70a7a59d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fdf4242f04cdb4a265ca6f37092c805 = $(`<div id="html_9fdf4242f04cdb4a265ca6f37092c805" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17813827>Päivärinnankatu 7 a</a> 1360 €/kk 60.0 m^2</div>`)[0];
+                popup_5fefc6a74afedd95154754dd70a7a59d.setContent(html_9fdf4242f04cdb4a265ca6f37092c805);
+            
+        
+
+        marker_2ecfda6ba3dc8d5df52825203fba9285.bindPopup(popup_5fefc6a74afedd95154754dd70a7a59d)
+        ;
+
+        
+    
+    
+            var marker_b764924b70247d69c512b12fdb87d4b4 = L.marker(
+                [60.1759, 24.9602],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0fe49e75c947232e195b2b06e92e170c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_b764924b70247d69c512b12fdb87d4b4.setIcon(icon_0fe49e75c947232e195b2b06e92e170c);
+        
+    
+        var popup_4f94590b583daf727728b3d26b270bfb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e8b5d9c0c8893884000a914430632f0 = $(`<div id="html_2e8b5d9c0c8893884000a914430632f0" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17354022>Pohjoisranta 24 C</a> 1155 €/kk 55.0 m^2</div>`)[0];
+                popup_4f94590b583daf727728b3d26b270bfb.setContent(html_2e8b5d9c0c8893884000a914430632f0);
+            
+        
+
+        marker_b764924b70247d69c512b12fdb87d4b4.bindPopup(popup_4f94590b583daf727728b3d26b270bfb)
+        ;
+
+        
+    
+    
+            var marker_ffa68752ec9e859b6c9052f714bb1caa = L.marker(
+                [60.1651, 24.9319],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_5ad56b10ff40cd5da5a5869aeff5f4a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ffa68752ec9e859b6c9052f714bb1caa.setIcon(icon_5ad56b10ff40cd5da5a5869aeff5f4a1);
+        
+    
+        var popup_0aae7265e7cc131701da3ab65d25de48 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41a8a0aa71fd6b4e2f59a5a94f73eb8b = $(`<div id="html_41a8a0aa71fd6b4e2f59a5a94f73eb8b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17812269>Kalevankatu 36</a> 1490 €/kk 62.0 m^2</div>`)[0];
+                popup_0aae7265e7cc131701da3ab65d25de48.setContent(html_41a8a0aa71fd6b4e2f59a5a94f73eb8b);
+            
+        
+
+        marker_ffa68752ec9e859b6c9052f714bb1caa.bindPopup(popup_0aae7265e7cc131701da3ab65d25de48)
+        ;
+
+        
+    
+    
+            var marker_6327532ba30b1f1daa0249c68899cf84 = L.marker(
+                [60.164, 24.9249],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_2a0919caf86ff9b33ee1877ebaaa989b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6327532ba30b1f1daa0249c68899cf84.setIcon(icon_2a0919caf86ff9b33ee1877ebaaa989b);
+        
+    
+        var popup_1400fe86827a28fcd458c92e235d0e00 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50459a37b13321f7dc7c442f5cc6c35e = $(`<div id="html_50459a37b13321f7dc7c442f5cc6c35e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17812048>Eerikinkatu 43 D</a> 1310 €/kk 65.0 m^2</div>`)[0];
+                popup_1400fe86827a28fcd458c92e235d0e00.setContent(html_50459a37b13321f7dc7c442f5cc6c35e);
+            
+        
+
+        marker_6327532ba30b1f1daa0249c68899cf84.bindPopup(popup_1400fe86827a28fcd458c92e235d0e00)
+        ;
+
+        
+    
+    
+            var marker_52aaaae7eb1865c46c4972fb026ff4ba = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_de478882ea171194698f15d2376280fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_52aaaae7eb1865c46c4972fb026ff4ba.setIcon(icon_de478882ea171194698f15d2376280fe);
+        
+    
+        var popup_06afbe8753bb42d76bb72124b5e90995 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bdd9a1d03d6a54a3321a69bd72ed04a0 = $(`<div id="html_bdd9a1d03d6a54a3321a69bd72ed04a0" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17809562>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_06afbe8753bb42d76bb72124b5e90995.setContent(html_bdd9a1d03d6a54a3321a69bd72ed04a0);
+            
+        
+
+        marker_52aaaae7eb1865c46c4972fb026ff4ba.bindPopup(popup_06afbe8753bb42d76bb72124b5e90995)
+        ;
+
+        
+    
+    
+            var marker_1ebba304e11a4b6fd23f40eb16f11f39 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a3e1f7d83e19a9d4c8d43a50d287b3b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1ebba304e11a4b6fd23f40eb16f11f39.setIcon(icon_a3e1f7d83e19a9d4c8d43a50d287b3b0);
+        
+    
+        var popup_78842e9a0c0ae3249f344d3889d6f211 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_654c3829cec5b2582117751ea7cbf78e = $(`<div id="html_654c3829cec5b2582117751ea7cbf78e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17809561>Alppikatu 3</a> 1190 €/kk 56.0 m^2</div>`)[0];
+                popup_78842e9a0c0ae3249f344d3889d6f211.setContent(html_654c3829cec5b2582117751ea7cbf78e);
+            
+        
+
+        marker_1ebba304e11a4b6fd23f40eb16f11f39.bindPopup(popup_78842e9a0c0ae3249f344d3889d6f211)
+        ;
+
+        
+    
+    
+            var marker_f6b546b38d3652eeec366987e06b9d97 = L.marker(
+                [60.1785, 24.9609],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_2a3ea76d155d55c5f049b002266930eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_f6b546b38d3652eeec366987e06b9d97.setIcon(icon_2a3ea76d155d55c5f049b002266930eb);
+        
+    
+        var popup_30ee052cbaef3923f105f1bfbe980d4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a37dd022d0f7392425c031c0edf7d120 = $(`<div id="html_a37dd022d0f7392425c031c0edf7d120" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17806709>Hakaniemenranta 16</a> 1500 €/kk 77.0 m^2</div>`)[0];
+                popup_30ee052cbaef3923f105f1bfbe980d4c.setContent(html_a37dd022d0f7392425c031c0edf7d120);
+            
+        
+
+        marker_f6b546b38d3652eeec366987e06b9d97.bindPopup(popup_30ee052cbaef3923f105f1bfbe980d4c)
+        ;
+
+        
+    
+    
+            var marker_b3af077c98a9a425a290d584ae1e1c8e = L.marker(
+                [60.1848, 24.9625],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_11cf8e9a43e7cd1edb72979e5f01e0ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b3af077c98a9a425a290d584ae1e1c8e.setIcon(icon_11cf8e9a43e7cd1edb72979e5f01e0ff);
+        
+    
+        var popup_2a17e8c9ca71517e8e5e3cd6aba29876 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e588cac8cd20b342bb18243972b4916 = $(`<div id="html_0e588cac8cd20b342bb18243972b4916" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17806418>Lintulahdenaukio 8 A</a> 1099 €/kk 55.5 m^2</div>`)[0];
+                popup_2a17e8c9ca71517e8e5e3cd6aba29876.setContent(html_0e588cac8cd20b342bb18243972b4916);
+            
+        
+
+        marker_b3af077c98a9a425a290d584ae1e1c8e.bindPopup(popup_2a17e8c9ca71517e8e5e3cd6aba29876)
+        ;
+
+        
+    
+    
+            var marker_7cd8e688a313130b29b8b50883d91b3a = L.marker(
+                [60.1649, 24.9337],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_333b5f1715c794e39ab793ce940cfaef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_7cd8e688a313130b29b8b50883d91b3a.setIcon(icon_333b5f1715c794e39ab793ce940cfaef);
+        
+    
+        var popup_684f9a2d06cb766cb1ba5b93d882367c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_85b762bf1ee5d0c4e844b28813ac6fa2 = $(`<div id="html_85b762bf1ee5d0c4e844b28813ac6fa2" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17798683>Lönnrotinkatu 23 B</a> 1150 €/kk 57.0 m^2</div>`)[0];
+                popup_684f9a2d06cb766cb1ba5b93d882367c.setContent(html_85b762bf1ee5d0c4e844b28813ac6fa2);
+            
+        
+
+        marker_7cd8e688a313130b29b8b50883d91b3a.bindPopup(popup_684f9a2d06cb766cb1ba5b93d882367c)
+        ;
+
+        
+    
+    
+            var marker_c11e65ce6672973e266e63d6d4a5db5c = L.marker(
+                [60.1846, 24.9621],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_017776cd04f9f1a0f26c1603e50b72d3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c11e65ce6672973e266e63d6d4a5db5c.setIcon(icon_017776cd04f9f1a0f26c1603e50b72d3);
+        
+    
+        var popup_f7491e87863e1c30a5f0c863ef5ebf4e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e6b25b71fdd02f3f566830bdb6b67901 = $(`<div id="html_e6b25b71fdd02f3f566830bdb6b67901" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17315716>Lintulahdenaukio 6</a> 1398 €/kk 67.0 m^2</div>`)[0];
+                popup_f7491e87863e1c30a5f0c863ef5ebf4e.setContent(html_e6b25b71fdd02f3f566830bdb6b67901);
+            
+        
+
+        marker_c11e65ce6672973e266e63d6d4a5db5c.bindPopup(popup_f7491e87863e1c30a5f0c863ef5ebf4e)
+        ;
+
+        
+    
+    
+            var marker_468eeb9b846966ed88209c1fa1828bcc = L.marker(
+                [60.1802, 24.9619],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_940ba5afe2fd62a86e90e416290d55fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_468eeb9b846966ed88209c1fa1828bcc.setIcon(icon_940ba5afe2fd62a86e90e416290d55fb);
+        
+    
+        var popup_f54fd0c67199010d3ec606c1bd15687c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d2b9208e4b129236aa2de1bf25cb4de = $(`<div id="html_5d2b9208e4b129236aa2de1bf25cb4de" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17793816>Hakaniemenranta 28 A</a> 950 €/kk 55.0 m^2</div>`)[0];
+                popup_f54fd0c67199010d3ec606c1bd15687c.setContent(html_5d2b9208e4b129236aa2de1bf25cb4de);
+            
+        
+
+        marker_468eeb9b846966ed88209c1fa1828bcc.bindPopup(popup_f54fd0c67199010d3ec606c1bd15687c)
+        ;
+
+        
+    
+    
+            var marker_dfcf7844207d16aaaca58cf42add35f3 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0302b8d85b8109c4d412b0ffdee0de36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_dfcf7844207d16aaaca58cf42add35f3.setIcon(icon_0302b8d85b8109c4d412b0ffdee0de36);
+        
+    
+        var popup_20e3cca20ac5b995ab35e1ee55ac2028 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bc8263824a010c2ef453cebdc8ef9e5 = $(`<div id="html_2bc8263824a010c2ef453cebdc8ef9e5" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17790796>Alppikatu 3</a> 1200 €/kk 56.5 m^2</div>`)[0];
+                popup_20e3cca20ac5b995ab35e1ee55ac2028.setContent(html_2bc8263824a010c2ef453cebdc8ef9e5);
+            
+        
+
+        marker_dfcf7844207d16aaaca58cf42add35f3.bindPopup(popup_20e3cca20ac5b995ab35e1ee55ac2028)
+        ;
+
+        
+    
+    
+            var marker_945da452320593f7f98b4f95ddfcc664 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_767bb927f9acbe2f8aeff361faa83cad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_945da452320593f7f98b4f95ddfcc664.setIcon(icon_767bb927f9acbe2f8aeff361faa83cad);
+        
+    
+        var popup_7dcf5b6ba1ef86a7703cbf62d22a99c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_639daac32f2f1667416b62d89cd24424 = $(`<div id="html_639daac32f2f1667416b62d89cd24424" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17790794>Alppikatu 3</a> 1195 €/kk 56.5 m^2</div>`)[0];
+                popup_7dcf5b6ba1ef86a7703cbf62d22a99c7.setContent(html_639daac32f2f1667416b62d89cd24424);
+            
+        
+
+        marker_945da452320593f7f98b4f95ddfcc664.bindPopup(popup_7dcf5b6ba1ef86a7703cbf62d22a99c7)
+        ;
+
+        
+    
+    
+            var marker_d6ecb8d677b59d45a5b98f50182cbba6 = L.marker(
+                [60.1847, 24.9412],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_e8f1f5042c78942e6ae6ad47ce177875 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_d6ecb8d677b59d45a5b98f50182cbba6.setIcon(icon_e8f1f5042c78942e6ae6ad47ce177875);
+        
+    
+        var popup_f94deb5af5fa3e0435efa02fac699f41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79025d02dc766fb3e8d9787df11d858e = $(`<div id="html_79025d02dc766fb3e8d9787df11d858e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17790792>Alppikatu 3</a> 1190 €/kk 56.5 m^2</div>`)[0];
+                popup_f94deb5af5fa3e0435efa02fac699f41.setContent(html_79025d02dc766fb3e8d9787df11d858e);
+            
+        
+
+        marker_d6ecb8d677b59d45a5b98f50182cbba6.bindPopup(popup_f94deb5af5fa3e0435efa02fac699f41)
+        ;
+
+        
+    
+    
+            var marker_64c322e86d54dc99375d6ae694497c92 = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_d546f04640049ba2043dad05ac5f7755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_64c322e86d54dc99375d6ae694497c92.setIcon(icon_d546f04640049ba2043dad05ac5f7755);
+        
+    
+        var popup_7cdceb906d8279c89924ffaa11a8e26e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6a21d61c8efa892446b4724551f3e701 = $(`<div id="html_6a21d61c8efa892446b4724551f3e701" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17784801>Eerikinkatu 41</a> 1235 €/kk 58.5 m^2</div>`)[0];
+                popup_7cdceb906d8279c89924ffaa11a8e26e.setContent(html_6a21d61c8efa892446b4724551f3e701);
+            
+        
+
+        marker_64c322e86d54dc99375d6ae694497c92.bindPopup(popup_7cdceb906d8279c89924ffaa11a8e26e)
+        ;
+
+        
+    
+    
+            var marker_fb3a13b3a6ebd5f817093c7a045426db = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_b1ab4228fc601ba0d7441524e240e253 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fb3a13b3a6ebd5f817093c7a045426db.setIcon(icon_b1ab4228fc601ba0d7441524e240e253);
+        
+    
+        var popup_15242ba6c772f11edd6998b40b1ff1ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fad4babe5a4698e0974b90b80eabdf7b = $(`<div id="html_fad4babe5a4698e0974b90b80eabdf7b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17784796>Eerikinkatu 41</a> 1310 €/kk 65.0 m^2</div>`)[0];
+                popup_15242ba6c772f11edd6998b40b1ff1ee.setContent(html_fad4babe5a4698e0974b90b80eabdf7b);
+            
+        
+
+        marker_fb3a13b3a6ebd5f817093c7a045426db.bindPopup(popup_15242ba6c772f11edd6998b40b1ff1ee)
+        ;
+
+        
+    
+    
+            var marker_d93595dc6f96c691e424a616ce9f25c8 = L.marker(
+                [60.1614, 24.941],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_75933e27222fb0f2fb0db5cc3450d9c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d93595dc6f96c691e424a616ce9f25c8.setIcon(icon_75933e27222fb0f2fb0db5cc3450d9c5);
+        
+    
+        var popup_667d9288e2045fb4bb3053dd7a2077bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6d893d7e4ee42e7a03229e175eb83a89 = $(`<div id="html_6d893d7e4ee42e7a03229e175eb83a89" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17782533>Merimiehenkatu 15</a> 1450 €/kk 59.5 m^2</div>`)[0];
+                popup_667d9288e2045fb4bb3053dd7a2077bb.setContent(html_6d893d7e4ee42e7a03229e175eb83a89);
+            
+        
+
+        marker_d93595dc6f96c691e424a616ce9f25c8.bindPopup(popup_667d9288e2045fb4bb3053dd7a2077bb)
+        ;
+
+        
+    
+    
+            var marker_138229515b7c90efb80442a559ce0631 = L.marker(
+                [60.1652, 24.9302],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_59180cf08537a97a47aafe22ee8c7628 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_138229515b7c90efb80442a559ce0631.setIcon(icon_59180cf08537a97a47aafe22ee8c7628);
+        
+    
+        var popup_d24d7d091ef7c5968df40fdc30a888fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eade7edac6396ed657cfa91ea4fafd7b = $(`<div id="html_eade7edac6396ed657cfa91ea4fafd7b" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17771922>Eerikinkatu 36</a> 1290 €/kk 72.5 m^2</div>`)[0];
+                popup_d24d7d091ef7c5968df40fdc30a888fb.setContent(html_eade7edac6396ed657cfa91ea4fafd7b);
+            
+        
+
+        marker_138229515b7c90efb80442a559ce0631.bindPopup(popup_d24d7d091ef7c5968df40fdc30a888fb)
+        ;
+
+        
+    
+    
+            var marker_8f93a709e4b873aa0b0360a6e478f949 = L.marker(
+                [60.1606, 24.9554],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_af275bae689d6cdd10588c5bb49d3b0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8f93a709e4b873aa0b0360a6e478f949.setIcon(icon_af275bae689d6cdd10588c5bb49d3b0b);
+        
+    
+        var popup_09792a51a594aa7671e2889c981cab91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f80b3bfb99c2d0fe78bf64f05e7831 = $(`<div id="html_c7f80b3bfb99c2d0fe78bf64f05e7831" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17723603>Laivasillankatu 14</a> 1500 €/kk 65.0 m^2</div>`)[0];
+                popup_09792a51a594aa7671e2889c981cab91.setContent(html_c7f80b3bfb99c2d0fe78bf64f05e7831);
+            
+        
+
+        marker_8f93a709e4b873aa0b0360a6e478f949.bindPopup(popup_09792a51a594aa7671e2889c981cab91)
+        ;
+
+        
+    
+    
+            var marker_1c18dccfc20f83a3a7068e0652d09862 = L.marker(
+                [60.19, 24.9525],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_42500a51608dfdd55f94de726c55876a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_1c18dccfc20f83a3a7068e0652d09862.setIcon(icon_42500a51608dfdd55f94de726c55876a);
+        
+    
+        var popup_d67fa6a7f6d97bd37506e7cfd71ea8d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ef4d4e51375940ae435cd4416358b9 = $(`<div id="html_29ef4d4e51375940ae435cd4416358b9" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17713728>Aleksis Kiven katu 11 a B</a> 1215 €/kk 58.0 m^2</div>`)[0];
+                popup_d67fa6a7f6d97bd37506e7cfd71ea8d5.setContent(html_29ef4d4e51375940ae435cd4416358b9);
+            
+        
+
+        marker_1c18dccfc20f83a3a7068e0652d09862.bindPopup(popup_d67fa6a7f6d97bd37506e7cfd71ea8d5)
+        ;
+
+        
+    
+    
+            var marker_4a27c2fad04335a8577213bca10ef874 = L.marker(
+                [60.1875, 24.9681],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_69e00605c527f2e447c056573ea5043e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_4a27c2fad04335a8577213bca10ef874.setIcon(icon_69e00605c527f2e447c056573ea5043e);
+        
+    
+        var popup_4bd1c92c7cf006ddcc0b1849875ef94d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f364854e9c75766d8dd7afdc0d63f81 = $(`<div id="html_3f364854e9c75766d8dd7afdc0d63f81" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17712664>Suvilahdenkatu 6 C 40</a> 1275 €/kk 57.0 m^2</div>`)[0];
+                popup_4bd1c92c7cf006ddcc0b1849875ef94d.setContent(html_3f364854e9c75766d8dd7afdc0d63f81);
+            
+        
+
+        marker_4a27c2fad04335a8577213bca10ef874.bindPopup(popup_4bd1c92c7cf006ddcc0b1849875ef94d)
+        ;
+
+        
+    
+    
+            var marker_dc4aeb22509209cd02111dc40f4dea33 = L.marker(
+                [60.17, 24.9593],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_e7d89d353d288e90512216b5afbb8c3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc4aeb22509209cd02111dc40f4dea33.setIcon(icon_e7d89d353d288e90512216b5afbb8c3f);
+        
+    
+        var popup_8b52faa14bcfefcf180882ef1a1a4d28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a942031e7dd3e82a67587832985acc00 = $(`<div id="html_a942031e7dd3e82a67587832985acc00" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17712101>Pohjoisranta 2</a> 1500 €/kk 56.0 m^2</div>`)[0];
+                popup_8b52faa14bcfefcf180882ef1a1a4d28.setContent(html_a942031e7dd3e82a67587832985acc00);
+            
+        
+
+        marker_dc4aeb22509209cd02111dc40f4dea33.bindPopup(popup_8b52faa14bcfefcf180882ef1a1a4d28)
+        ;
+
+        
+    
+    
+            var marker_d153a1b98ddce593db0745d9b501ad9a = L.marker(
+                [60.1853, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_d907bd814847bbb43ec32ac2df1496df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d153a1b98ddce593db0745d9b501ad9a.setIcon(icon_d907bd814847bbb43ec32ac2df1496df);
+        
+    
+        var popup_568be2e7e1cc7aa021bf44153bdeffc5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6401a556743fe743e0df03dedba57062 = $(`<div id="html_6401a556743fe743e0df03dedba57062" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17706140>Hämeentie 40 A</a> 1425 €/kk 60.0 m^2</div>`)[0];
+                popup_568be2e7e1cc7aa021bf44153bdeffc5.setContent(html_6401a556743fe743e0df03dedba57062);
+            
+        
+
+        marker_d153a1b98ddce593db0745d9b501ad9a.bindPopup(popup_568be2e7e1cc7aa021bf44153bdeffc5)
+        ;
+
+        
+    
+    
+            var marker_f2be8c2c9ee0cb042bb8d3df4f404530 = L.marker(
+                [60.1853, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7db6dd56dd4439e3761daeecfea4330f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f2be8c2c9ee0cb042bb8d3df4f404530.setIcon(icon_7db6dd56dd4439e3761daeecfea4330f);
+        
+    
+        var popup_7499b2f27af024df7d78f3c99df0e3bc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddc3ee2a03c8b81a2739341220c2207e = $(`<div id="html_ddc3ee2a03c8b81a2739341220c2207e" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17706123>Hämeentie 40 A</a> 1399 €/kk 60.0 m^2</div>`)[0];
+                popup_7499b2f27af024df7d78f3c99df0e3bc.setContent(html_ddc3ee2a03c8b81a2739341220c2207e);
+            
+        
+
+        marker_f2be8c2c9ee0cb042bb8d3df4f404530.bindPopup(popup_7499b2f27af024df7d78f3c99df0e3bc)
+        ;
+
+        
+    
+    
+            var marker_0929296021a5e686677b05873440e449 = L.marker(
+                [60.1853, 24.9603],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0aa13b4021a00757eec2e849000f3942 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0929296021a5e686677b05873440e449.setIcon(icon_0aa13b4021a00757eec2e849000f3942);
+        
+    
+        var popup_a88ecd7cd22ccddbf74ebdad29e1aa63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf97c35bb6610a8b63ae3f14ad2bdde9 = $(`<div id="html_bf97c35bb6610a8b63ae3f14ad2bdde9" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17706111>Hämeentie 40 B</a> 1425 €/kk 60.0 m^2</div>`)[0];
+                popup_a88ecd7cd22ccddbf74ebdad29e1aa63.setContent(html_bf97c35bb6610a8b63ae3f14ad2bdde9);
+            
+        
+
+        marker_0929296021a5e686677b05873440e449.bindPopup(popup_a88ecd7cd22ccddbf74ebdad29e1aa63)
+        ;
+
+        
+    
+    
+            var marker_d28eba628b60585c04531b4c5ebf1666 = L.marker(
+                [60.1593, 24.9167],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_92afbe657a4fc2a0392af58e6232fe6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_d28eba628b60585c04531b4c5ebf1666.setIcon(icon_92afbe657a4fc2a0392af58e6232fe6e);
+        
+    
+        var popup_24d7bb83bdf694a1b2f88037881314ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e0297febb7b91f7e3ebc679eb9c907d = $(`<div id="html_6e0297febb7b91f7e3ebc679eb9c907d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17690265>Välimerenkatu 10</a> 1360 €/kk 60.0 m^2</div>`)[0];
+                popup_24d7bb83bdf694a1b2f88037881314ee.setContent(html_6e0297febb7b91f7e3ebc679eb9c907d);
+            
+        
+
+        marker_d28eba628b60585c04531b4c5ebf1666.bindPopup(popup_24d7bb83bdf694a1b2f88037881314ee)
+        ;
+
+        
+    
+    
+            var marker_7da9913ff0048645154c3bd4973f0783 = L.marker(
+                [60.1851, 24.9178],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_6fd8ad684e4c110e1977320b76f32f01 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7da9913ff0048645154c3bd4973f0783.setIcon(icon_6fd8ad684e4c110e1977320b76f32f01);
+        
+    
+        var popup_f55f100ae327bc5beb01fb9267e186ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de28f03dd8d2d52f82252ed4097b5552 = $(`<div id="html_de28f03dd8d2d52f82252ed4097b5552" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17688320>Linnankoskenkatu 10 A</a> 1490 €/kk 62.0 m^2</div>`)[0];
+                popup_f55f100ae327bc5beb01fb9267e186ab.setContent(html_de28f03dd8d2d52f82252ed4097b5552);
+            
+        
+
+        marker_7da9913ff0048645154c3bd4973f0783.bindPopup(popup_f55f100ae327bc5beb01fb9267e186ab)
+        ;
+
+        
+    
+    
+            var marker_db70426756ae9a87b7930e2c2307f6c8 = L.marker(
+                [60.1639, 24.9256],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7eaa41b7c5d366e9ab6e7f567a58d513 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_db70426756ae9a87b7930e2c2307f6c8.setIcon(icon_7eaa41b7c5d366e9ab6e7f567a58d513);
+        
+    
+        var popup_5207cb0a0cbd168dbb117ec74ea0c730 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b86e12562a9f0af7a4eb11280dcade3 = $(`<div id="html_5b86e12562a9f0af7a4eb11280dcade3" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17597360>Eerikinkatu 41</a> 1225 €/kk 58.5 m^2</div>`)[0];
+                popup_5207cb0a0cbd168dbb117ec74ea0c730.setContent(html_5b86e12562a9f0af7a4eb11280dcade3);
+            
+        
+
+        marker_db70426756ae9a87b7930e2c2307f6c8.bindPopup(popup_5207cb0a0cbd168dbb117ec74ea0c730)
+        ;
+
+        
+    
+    
+            var marker_e47298e30fbadef3e39cd03aedd71193 = L.marker(
+                [60.1719, 24.9315],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_8168a0d4e18f29adc3a5a3747b8626fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_e47298e30fbadef3e39cd03aedd71193.setIcon(icon_8168a0d4e18f29adc3a5a3747b8626fd);
+        
+    
+        var popup_dfd9696250e4e84d4e5e8b0e1bb86ac9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3627f2000fc76e69ef7895edb5d1d44 = $(`<div id="html_e3627f2000fc76e69ef7895edb5d1d44" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17587159>Ainonkatu 4</a> 1190 €/kk 65.0 m^2</div>`)[0];
+                popup_dfd9696250e4e84d4e5e8b0e1bb86ac9.setContent(html_e3627f2000fc76e69ef7895edb5d1d44);
+            
+        
+
+        marker_e47298e30fbadef3e39cd03aedd71193.bindPopup(popup_dfd9696250e4e84d4e5e8b0e1bb86ac9)
+        ;
+
+        
+    
+    
+            var marker_dfb7eccfc45dc98f53c81cb3ee6a6373 = L.marker(
+                [60.1823, 24.9533],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_2a2725554c696c1f1b2fa5dc6003d208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_dfb7eccfc45dc98f53c81cb3ee6a6373.setIcon(icon_2a2725554c696c1f1b2fa5dc6003d208);
+        
+    
+        var popup_2929c08e20364d7ae7af0ecf48487367 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60dd84d617fd6d17fa69b4ea9c54b008 = $(`<div id="html_60dd84d617fd6d17fa69b4ea9c54b008" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17566873>Neljäs linja 3-5</a> 1214 €/kk 55.4 m^2</div>`)[0];
+                popup_2929c08e20364d7ae7af0ecf48487367.setContent(html_60dd84d617fd6d17fa69b4ea9c54b008);
+            
+        
+
+        marker_dfb7eccfc45dc98f53c81cb3ee6a6373.bindPopup(popup_2929c08e20364d7ae7af0ecf48487367)
+        ;
+
+        
+    
+    
+            var marker_3650f31c69310c7c93c19438ab72e3c4 = L.marker(
+                [60.1757, 24.9263],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a6f40c663fa82ec926bc670554d948f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3650f31c69310c7c93c19438ab72e3c4.setIcon(icon_a6f40c663fa82ec926bc670554d948f1);
+        
+    
+        var popup_680fe2e6f5a10de377d9528499a0c55e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa4f28c922a1e8aab9171c866f1d9ab1 = $(`<div id="html_fa4f28c922a1e8aab9171c866f1d9ab1" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17563663>Apollonkatu 10 A 14</a> 1390 €/kk 57.0 m^2</div>`)[0];
+                popup_680fe2e6f5a10de377d9528499a0c55e.setContent(html_fa4f28c922a1e8aab9171c866f1d9ab1);
+            
+        
+
+        marker_3650f31c69310c7c93c19438ab72e3c4.bindPopup(popup_680fe2e6f5a10de377d9528499a0c55e)
+        ;
+
+        
+    
+    
+            var marker_5483411ff79af2af7eabcb0aea29455d = L.marker(
+                [60.19, 24.9525],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0038fc166fba0e967b1b785280d7d158 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_5483411ff79af2af7eabcb0aea29455d.setIcon(icon_0038fc166fba0e967b1b785280d7d158);
+        
+    
+        var popup_ab847abca3a1f512e7bccd65d60438b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a379a1bd099b2c133d257eea89b4ba4d = $(`<div id="html_a379a1bd099b2c133d257eea89b4ba4d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17562535>Aleksis Kiven katu 11 a C</a> 1260 €/kk 57.5 m^2</div>`)[0];
+                popup_ab847abca3a1f512e7bccd65d60438b3.setContent(html_a379a1bd099b2c133d257eea89b4ba4d);
+            
+        
+
+        marker_5483411ff79af2af7eabcb0aea29455d.bindPopup(popup_ab847abca3a1f512e7bccd65d60438b3)
+        ;
+
+        
+    
+    
+            var marker_29d51bea73b263315ebf7fab94030183 = L.marker(
+                [60.1607, 24.9369],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_777a4a2070320a37fc95b82417b97700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_29d51bea73b263315ebf7fab94030183.setIcon(icon_777a4a2070320a37fc95b82417b97700);
+        
+    
+        var popup_612e1ae298bf8a466232a62f2d65614f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6d2aee95c7c142323fbb1742d91cd48 = $(`<div id="html_b6d2aee95c7c142323fbb1742d91cd48" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17524190>Punavuorenkatu 14 A</a> 1350 €/kk 63.0 m^2</div>`)[0];
+                popup_612e1ae298bf8a466232a62f2d65614f.setContent(html_b6d2aee95c7c142323fbb1742d91cd48);
+            
+        
+
+        marker_29d51bea73b263315ebf7fab94030183.bindPopup(popup_612e1ae298bf8a466232a62f2d65614f)
+        ;
+
+        
+    
+    
+            var marker_268b866b7915a77247ebc19cafcfd778 = L.marker(
+                [60.1759, 24.9602],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_7c90658c136a881225f1701cc642f95d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightred", "prefix": "glyphicon"}
+            );
+            marker_268b866b7915a77247ebc19cafcfd778.setIcon(icon_7c90658c136a881225f1701cc642f95d);
+        
+    
+        var popup_f8eccfb3a467c90c0dbb413784ed992f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e4efba5861a1dd21e71d2dc8fc284ee = $(`<div id="html_2e4efba5861a1dd21e71d2dc8fc284ee" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17411023>Pohjoisranta 24 C</a> 1285 €/kk 57.0 m^2</div>`)[0];
+                popup_f8eccfb3a467c90c0dbb413784ed992f.setContent(html_2e4efba5861a1dd21e71d2dc8fc284ee);
+            
+        
+
+        marker_268b866b7915a77247ebc19cafcfd778.bindPopup(popup_f8eccfb3a467c90c0dbb413784ed992f)
+        ;
+
+        
+    
+    
+            var marker_36f8f6e6df0b51c991b1f8e1da131eec = L.marker(
+                [60.1883, 24.9665],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_2dfccc7ce99c8c41f1315f16a182236b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_36f8f6e6df0b51c991b1f8e1da131eec.setIcon(icon_2dfccc7ce99c8c41f1315f16a182236b);
+        
+    
+        var popup_ae11d80193b69b2aa8292efe480fb5f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc2b296422fcba4b1bfad017f1d93229 = $(`<div id="html_cc2b296422fcba4b1bfad017f1d93229" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17386391>Pääskylänrinne 8 A</a> 1125 €/kk 55.0 m^2</div>`)[0];
+                popup_ae11d80193b69b2aa8292efe480fb5f9.setContent(html_cc2b296422fcba4b1bfad017f1d93229);
+            
+        
+
+        marker_36f8f6e6df0b51c991b1f8e1da131eec.bindPopup(popup_ae11d80193b69b2aa8292efe480fb5f9)
+        ;
+
+        
+    
+    
+            var marker_bc8b6890a31d87b72c2e61e9a046027b = L.marker(
+                [60.1591, 24.9212],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_8deaa71abc351a3ac6662d145da49801 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bc8b6890a31d87b72c2e61e9a046027b.setIcon(icon_8deaa71abc351a3ac6662d145da49801);
+        
+    
+        var popup_5133d4a0637675306adc46a476ae18e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8c5f0fe8aea0fff7e2404d1980e9370 = $(`<div id="html_e8c5f0fe8aea0fff7e2404d1980e9370" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17363568>Hietasaarenkuja 3 a</a> 1300 €/kk 62.0 m^2</div>`)[0];
+                popup_5133d4a0637675306adc46a476ae18e7.setContent(html_e8c5f0fe8aea0fff7e2404d1980e9370);
+            
+        
+
+        marker_bc8b6890a31d87b72c2e61e9a046027b.bindPopup(popup_5133d4a0637675306adc46a476ae18e7)
+        ;
+
+        
+    
+    
+            var marker_250904b4a68276e1ff71934b0b4541af = L.marker(
+                [60.19, 24.967],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_4fd883bd3bf44bb1ae4808a347af471d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_250904b4a68276e1ff71934b0b4541af.setIcon(icon_4fd883bd3bf44bb1ae4808a347af471d);
+        
+    
+        var popup_87513c250286708cb62ba5065d9511ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cca1bcc466e23e9fd19cfedd7783386 = $(`<div id="html_9cca1bcc466e23e9fd19cfedd7783386" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17347343>Tuulensuuntori 1 B 47</a> 1250 €/kk 66.5 m^2</div>`)[0];
+                popup_87513c250286708cb62ba5065d9511ab.setContent(html_9cca1bcc466e23e9fd19cfedd7783386);
+            
+        
+
+        marker_250904b4a68276e1ff71934b0b4541af.bindPopup(popup_87513c250286708cb62ba5065d9511ab)
+        ;
+
+        
+    
+    
+            var marker_42c83a5c190ccbcdaa50b2d2b5ada941 = L.marker(
+                [60.179, 24.9598],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_0ee8a2f3a0c46c05134babbf3ebdf0fd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightgreen", "prefix": "glyphicon"}
+            );
+            marker_42c83a5c190ccbcdaa50b2d2b5ada941.setIcon(icon_0ee8a2f3a0c46c05134babbf3ebdf0fd);
+        
+    
+        var popup_d1fc28ba8cb95a9df8613fad8007377e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d74b4b310a7b069f05281b79ec2847d = $(`<div id="html_7d74b4b310a7b069f05281b79ec2847d" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/17246489>Haapaniemenkatu 11</a> 1498 €/kk 78.0 m^2</div>`)[0];
+                popup_d1fc28ba8cb95a9df8613fad8007377e.setContent(html_7d74b4b310a7b069f05281b79ec2847d);
+            
+        
+
+        marker_42c83a5c190ccbcdaa50b2d2b5ada941.bindPopup(popup_d1fc28ba8cb95a9df8613fad8007377e)
+        ;
+
+        
+    
+    
+            var marker_64482328f6a8df27774365ca5f3ee2dc = L.marker(
+                [60.1851, 24.9611],
+                {}
+            ).addTo(map_8f04ef327d0948a73d352f9790c4851a);
+        
+    
+            var icon_a6ebc91baf3b71380c98f1e9c5359c45 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_64482328f6a8df27774365ca5f3ee2dc.setIcon(icon_a6ebc91baf3b71380c98f1e9c5359c45);
+        
+    
+        var popup_676c217c88c3923f30e6118e216cb4e4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44d76eae8879c09e5f9243bd09b26fad = $(`<div id="html_44d76eae8879c09e5f9243bd09b26fad" style="width: 100.0%; height: 100.0%;"><a href=https://asunnot.oikotie.fi/vuokra-asunnot/helsinki/16390980>Hämeentie 17 a as 3</a> 1190 €/kk 59.0 m^2</div>`)[0];
+                popup_676c217c88c3923f30e6118e216cb4e4.setContent(html_44d76eae8879c09e5f9243bd09b26fad);
+            
+        
+
+        marker_64482328f6a8df27774365ca5f3ee2dc.bindPopup(popup_676c217c88c3923f30e6118e216cb4e4)
+        ;
+
+        
+    
+</script>
+</html>
