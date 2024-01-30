@@ -16,8 +16,27 @@ for r in r.text.split('\n'):
     if (r[:26] == '<meta name="cuid" content='):
         cuid = r[27:-2]
 
+LOCATIONS = '[[14694,5,"00100, Helsinki"],\
+            [14695,5,"00120, Helsinki"],\
+            [14696,5,"00130, Helsinki"],\
+            [14697,5,"00140, Helsinki"],\
+            [14698,5,"00150, Helsinki"],\
+            [14699,5,"00160, Helsinki"],\
+            [14700,5,"00170, Helsinki"],\
+            [14701,5,"00180, Helsinki"],\
+            [5079889,5,"00220, Helsinki"],\
+            [14705,5,"00250, Helsinki"],\
+            [14706,5,"00260, Helsinki"],\
+            [14709,5,"00290, Helsinki"],\
+            [14725,5,"00500, Helsinki"],\
+            [14726,5,"00510, Helsinki"],\
+            [14728,5,"00530, Helsinki"],\
+            [5079937,5,"00540, Helsinki"],\
+            [14729,5,"00550, Helsinki"],\
+            [14732,5,"00580, Helsinki"]]'
+            
 PARAMS = {'cardType':101, 'limit':1000,
-          'locations':'[[14694,5,"00100, Helsinki"],[14695,5,"00120, Helsinki"],[14696,5,"00130, Helsinki"],[14697,5,"00140, Helsinki"],[14698,5,"00150, Helsinki"],[14699,5,"00160, Helsinki"],[14700,5,"00170, Helsinki"],[14701,5,"00180, Helsinki"],[5079889,5,"00220, Helsinki"],[14705,5,"00250, Helsinki"],[14706,5,"00260, Helsinki"],[14709,5,"00290, Helsinki"],[14725,5,"00500, Helsinki"],[14726,5,"00510, Helsinki"],[14728,5,"00530, Helsinki"],[5079937,5,"00540, Helsinki"],[14729,5,"00550, Helsinki"],[14732,5,"00580, Helsinki"]]',
+          'locations':LOCATIONS,
           'offset':0, 'constructionYear[max]':2023, 'roomCount[]':[2,3,4], 'price[min]':800, 'price[max]':1500, 'size[min]':55, 'size[max]':250, 'sortBy':"published_sort_desc"}
 HEADERS = {"OTA-cuid":cuid, "OTA-loaded":loaded, "OTA-token":token}
 
