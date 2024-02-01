@@ -1,1 +1,1 @@
-A python script that calls Oikotie API, saves found apartments on a map, and creates a .csv file to be used in addition to an .xlsm file.
+A python script that calls Oikotie API, saves found apartments on a map, and appends them to an .xlsx file. Note, xlwings requires Excel installation on the computer.
