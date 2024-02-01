@@ -1,8 +1,9 @@
-from geopy.geocoders import Nominatim
+import os
 import folium
 import requests
 import pandas as pd
 import xlwings as xw
+from geopy.geocoders import Nominatim
 
 LOCATIONS = '[[14694,5,"00100, Helsinki"],\
             [14695,5,"00120, Helsinki"],\
@@ -81,6 +82,10 @@ def create_dataframe(datalist):
     df = pd.DataFrame(datalist, columns = ['url', 'rooms', 'roomConfiguration', 'price', 'published', 'size', 'address', 'district', 'city', 'buildYear', 'latitude', 'longitude'])
     return df
 
+def create_generated_files_directory():
+    if not os.path.exists('generated_files/'):
+        os.makedirs('generated_files/')
+        
 def create_CSV_sheet(df):
 
     wb = xw.Book('templates/asunnot_template.xlsx')
@@ -144,8 +149,9 @@ headers = get_headers()
 data = request_data(headers)
 datalist = create_datalist(data)
 df = create_dataframe(datalist)
+create_generated_files_directory()
 create_CSV_sheet(df)
 df = calculate_persqm(df)
 df = calculate_quintile(df)
-#mean_rent = calculate_mean_rent(df)
+mean_rent = calculate_mean_rent(df)
 create_map(df)
