@@ -64,13 +64,13 @@ for i in data['cards']:
         
 df = pd.DataFrame(datalist, columns = ['url', 'rooms', 'roomConfiguration', 'price', 'published', 'size', 'address', 'district', 'city', 'buildYear', 'latitude', 'longitude'])
 
-wb = xw.Book('asunnot3.xlsx')
+wb = xw.Book('asunnot.xlsx')
 sheet = wb.sheets['CSV']
 
 sheet.clear_contents()
 sheet['A1'].options(index=False, header=False).value = df
 
-wb.save("asunnot3.xlsx")
+wb.save("asunnot.xlsx")
 wb.close()
 
 
