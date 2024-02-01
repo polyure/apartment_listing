@@ -83,13 +83,13 @@ def create_dataframe(datalist):
 
 def create_CSV_sheet(df):
 
-    wb = xw.Book('asunnot.xlsx')
+    wb = xw.Book('templates/asunnot_template.xlsx')
     sheet = wb.sheets['CSV']
 
     sheet.clear_contents()
     sheet['A1'].options(index=False, header=False).value = df
 
-    wb.save("asunnot.xlsx")
+    wb.save('generated_files/asunnot.xlsx')
     wb.close()
 
 def calculate_persqm(df):
@@ -138,13 +138,13 @@ def create_map(df):
                     icon=folium.Icon(color=colour)
                     ).add_to(apartment_map)
 
-    apartment_map.save('asunnot.html')
+    apartment_map.save('generated_files/asunnot.html')
     
 headers = get_headers()
 data = request_data(headers)
 datalist = create_datalist(data)
 df = create_dataframe(datalist)
-#create_CSV_sheet(df)
+create_CSV_sheet(df)
 df = calculate_persqm(df)
 df = calculate_quintile(df)
 #mean_rent = calculate_mean_rent(df)
