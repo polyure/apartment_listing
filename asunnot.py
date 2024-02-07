@@ -1,9 +1,12 @@
 import os
-import folium
 import requests
+
+from folium import Marker, Map, Circle, Popup
+from folium.plugins import BeautifyIcon
+
 import pandas as pd
+
 import xlwings as xw
-from geopy.geocoders import Nominatim
 
 LOCATIONS = '[[14694,5,"00100, Helsinki"],\
             [14695,5,"00120, Helsinki"],\
@@ -111,9 +114,41 @@ def calculate_mean_rent(df):
     mean_rent = df['price'].mean() # For later implementations
     return mean_rent
 
-def create_map(df):
-    app = Nominatim(user_agent='tommy')
-    apartment_map = folium.Map([60.1868, 24.933], zoom_start=12) # Center the map on Helsinki
+def create_base_map():
+    base_map = Map([60.1718, 24.933], zoom_start=14)
+    return base_map
+
+def public_transport_map(base_map):
+    stations_df = pd.read_csv("templates/hsl_stops.csv")
+    
+    metro_stations = stations_df.loc[stations_df['VERKKO'] == 2]
+    tram_stations = stations_df.loc[stations_df['VERKKO'] == 3]
+    train_stations = stations_df.loc[stations_df['VERKKO'] == 4]
+
+    for i, v in metro_stations.iterrows():
+        Circle(location=[v['Y-koord.'], v['X-koord.']],
+                        radius=15,
+                        color='#FF6633',
+                        fill_color='#FF6633',
+                        fill=True).add_to(base_map)
+    
+    for i, v in tram_stations.iterrows():
+        Circle(location=[v['Y-koord.'], v['X-koord.']],
+                            radius=7,
+                            color='#009966',
+                            fill_color='#009966',
+                            fill=True).add_to(base_map)
+        
+    for i, v in train_stations.iterrows():
+        Circle(location=[v['Y-koord.'], v['X-koord.']],
+                            radius=15,
+                            color='#993399',
+                            fill_color='#993399',
+                            fill=True).add_to(base_map)
+        
+    return base_map
+    
+def apartments_to_map(df, apartment_map):
     for i in range(len(df)):
         coords = [df.iloc[i]['latitude'], df.iloc[i]['longitude']]
         nametag = df.iloc[i]['address']
@@ -123,27 +158,46 @@ def create_map(df):
         
         match df.iloc[i]['quintile']:
             case 0:
-                colour = 'lightgreen'
+                colour = '#00A6A8'
             case 1:
-                colour = 'green'
+                colour = '#0092BA'
             case 2:
-                colour = 'orange'
+                colour = '#007DBC'
             case 3:
-                colour = 'lightred'
+                colour = '#0065AE'
             case 4:
-                colour = 'red'
+                colour = '#4A4B92'
             case _:
                 colour = 'black'
         
-        folium.Marker(location=coords, popup='<a href=' + 
-                    nametag_url + '>' + 
-                    nametag +  '</a>' + '\n' +
-                    str(nametag_price) + ' €/kk\n' +
-                    str(nametag_size) + ' m^2',
-                    icon=folium.Icon(color=colour)
-                    ).add_to(apartment_map)
+        popup = Popup(max_width=800, 
+                      html=(
+                            '<a href={}>{}</a><br>'
+                            '{} €/kk<br>'
+                            '{} m^2'
+                            ).format(
+                                nametag_url, 
+                                nametag, 
+                                nametag_price, 
+                                nametag_size)
+                      )
+        
+        Marker(location=coords, 
+               popup = popup,
+                    
+               icon=BeautifyIcon(prefix='fa',
+                                icon='house', 
+                                icon_shape='circle',
+                                border_width=0,
+                                background_color='transparent',
+                                text_color=colour,
+                                inner_icon_style="font-size:20px")
+                ).add_to(apartment_map)
 
-    apartment_map.save('generated_files/asunnot.html')
+    return apartment_map
+
+def save_map(map):
+    map.save('generated_files/asunnot.html')
     
 headers = get_headers()
 data = request_data(headers)
@@ -154,4 +208,7 @@ create_CSV_sheet(df)
 df = calculate_persqm(df)
 df = calculate_quintile(df)
 mean_rent = calculate_mean_rent(df)
-create_map(df)
+base_map = create_base_map()
+transport_map = public_transport_map(base_map)
+apartment_map = apartments_to_map(df, transport_map)
+save_map(apartment_map)
