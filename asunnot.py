@@ -64,8 +64,6 @@ def create_datalist(data):
     datalist = []
     for i in data['cards']:
         row = []
-        price = 0
-        size = 0
         for j in i:
             if j in fields:
                 if (j == "buildingData"):
